@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('egresados', function (){
+	return view('egresados/egresados');
+});
+
+Route::get('empleadores', function (){
+	return view('empleadores/empleadores');
+});
