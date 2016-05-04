@@ -7,13 +7,13 @@ Todas las configuraciones que se detallan a continuación son probadas bajo las 
     -[Debian 8.4](https://www.debian.org/releases/jessie/)  
     -[PHP 5.5.9](http://php.net/releases/5_5_9.php)
 ## Documentación ofical
-4/may/2016
+4/may/2016  
 Interfaces de egresados y de empleadores.
-    Para visualizar las interfaces con las rutas
-    /egresados
-    /empleadores
+    Para visualizar las interfaces con las rutas  
+    /egresados  
+    /empleadores  
 
-    
+
 Por hacer [Interfaces de egresados y empleadores]
     -Ajustar attributos name a todos los inputs.
     -Agregar Jquery
