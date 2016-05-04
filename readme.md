@@ -14,9 +14,9 @@ Interfaces de egresados y de empleadores.
     /empleadores  
 
 
-Por hacer [Interfaces de egresados y empleadores]
-    -Ajustar attributos name a todos los inputs.
-    -Agregar Jquery
-    -Crear modulo javascript para hacer crecer las tablas de manera dinamica
-    -Añadir los parametros necesarios al form
+Por hacer [Interfaces de egresados y empleadores]  
+    -Ajustar attributos name a todos los inputs.  
+    -Agregar Jquery  
+    -Crear modulo javascript para hacer crecer las tablas de manera dinamica  
+    -Añadir los parametros necesarios al form  
 
