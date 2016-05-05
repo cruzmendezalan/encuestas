@@ -6,8 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-<<<<<<< HEAD
-=======
     'App\\Console\\Commands\\Inspire' => $baseDir . '/app/Console/Commands/Inspire.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Events\\Event' => $baseDir . '/app/Events/Event.php',
@@ -49,12 +47,6 @@ return array(
     'Collective\\Html\\HtmlBuilder' => $vendorDir . '/laravelcollective/html/src/HtmlBuilder.php',
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
->>>>>>> 02f49992b50e7a2efb5b3e1f6146f485c1a2fc64
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
-    'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
-<<<<<<< HEAD
-=======
     'Diff' => $vendorDir . '/phpspec/php-diff/lib/Diff.php',
     'Diff_Renderer_Abstract' => $vendorDir . '/phpspec/php-diff/lib/Diff/Renderer/Abstract.php',
     'Diff_Renderer_Html_Array' => $vendorDir . '/phpspec/php-diff/lib/Diff/Renderer/Html/Array.php',
@@ -462,7 +454,6 @@ return array(
     'Faker\\Provider\\zh_TW\\Text' => $vendorDir . '/fzaninotto/faker/src/Faker/Provider/zh_TW/Text.php',
     'Faker\\UniqueGenerator' => $vendorDir . '/fzaninotto/faker/src/Faker/UniqueGenerator.php',
     'Faker\\ValidGenerator' => $vendorDir . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
->>>>>>> 02f49992b50e7a2efb5b3e1f6146f485c1a2fc64
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
@@ -535,8 +526,6 @@ return array(
     'Hamcrest\\Util' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
     'Hamcrest\\Xml\\HasXPath' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
-<<<<<<< HEAD
-=======
     'Illuminate\\Auth\\Access\\Gate' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
     'Illuminate\\Auth\\Access\\HandlesAuthorization' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php',
     'Illuminate\\Auth\\Access\\Response' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Access/Response.php',
@@ -1246,7 +1235,6 @@ return array(
     'Monolog\\Processor\\UidProcessor' => $vendorDir . '/monolog/monolog/src/Monolog/Processor/UidProcessor.php',
     'Monolog\\Processor\\WebProcessor' => $vendorDir . '/monolog/monolog/src/Monolog/Processor/WebProcessor.php',
     'Monolog\\Registry' => $vendorDir . '/monolog/monolog/src/Monolog/Registry.php',
->>>>>>> 02f49992b50e7a2efb5b3e1f6146f485c1a2fc64
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
     'PHPUnit_Extensions_PhptTestCase' => $vendorDir . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
@@ -1642,8 +1630,6 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
-<<<<<<< HEAD
-=======
     'PhpParser\\Autoloader' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Autoloader.php',
     'PhpParser\\Builder' => $vendorDir . '/nikic/php-parser/lib/PhpParser/Builder.php',
     'PhpParser\\BuilderAbstract' => $vendorDir . '/nikic/php-parser/lib/PhpParser/BuilderAbstract.php',
@@ -2272,7 +2258,6 @@ return array(
     'Psy\\VarDumper\\Dumper' => $vendorDir . '/psy/psysh/src/Psy/VarDumper/Dumper.php',
     'Psy\\VarDumper\\Presenter' => $vendorDir . '/psy/psysh/src/Psy/VarDumper/Presenter.php',
     'Psy\\VarDumper\\PresenterAware' => $vendorDir . '/psy/psysh/src/Psy/VarDumper/PresenterAware.php',
->>>>>>> 02f49992b50e7a2efb5b3e1f6146f485c1a2fc64
     'SebastianBergmann\\Comparator\\ArrayComparator' => $vendorDir . '/sebastian/comparator/src/ArrayComparator.php',
     'SebastianBergmann\\Comparator\\Comparator' => $vendorDir . '/sebastian/comparator/src/Comparator.php',
     'SebastianBergmann\\Comparator\\ComparisonFailure' => $vendorDir . '/sebastian/comparator/src/ComparisonFailure.php',

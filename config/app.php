@@ -198,13 +198,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-<<<<<<< HEAD
         'Moloquent'       => 'Jenssegers\Mongodb\Eloquent\Model',
-=======
 
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
->>>>>>> 02f49992b50e7a2efb5b3e1f6146f485c1a2fc64
 
     ],
 
