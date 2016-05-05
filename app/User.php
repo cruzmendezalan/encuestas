@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace encuestas;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

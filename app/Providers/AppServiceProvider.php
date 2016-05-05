@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace encuestas\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

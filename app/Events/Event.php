@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace encuestas\Events;
 
 abstract class Event
 {

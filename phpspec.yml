@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: encuestas
+        psr4_prefix: encuestas
         src_path: app
