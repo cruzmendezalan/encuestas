@@ -21,13 +21,17 @@ Por hacer [Interfaces de egresados y empleadores]
     -Añadir los parametros necesarios al form
 
 #Comentarios
-
-Para habilitar el usuario admin de mongo se busca el archivo mongodb.conf y se añade o descomenta la linea  
-security:
-    autorization: "enabled"
+  
+Crear usuario administrador mongo
+```json
 db.createUser({
     user:"admin",
     pwd: "admin",
     roles:["clusterAdmin","readAnyDatabase","readWriteAnyDatabase","userAdminAnyDatabase","dbAdminAnyDatabase"]
 });  
-
+```
+Para habilitar la autenticación de mongo se busca el archivo mongodb.conf y se añade o descomenta la linea
+```yaml
+security:
+    autorization: "enabled"
+```
