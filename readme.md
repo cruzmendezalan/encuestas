@@ -36,9 +36,9 @@ security:
     autorization: "enabled"
 ```
 Para loguearte en mongo ahora se usa el comando  
-mongo localhost/admin -u admin -p 
-Ahora seleccionas la base de datos del sistema, en este caso "encuestas" por lo tanto  
->use encuestas
+>mongo localhost/admin -u admin -p 
+Ahora nos pasaremos a la base de datos que se usará
+>use encuestas  
 Después de esto creamos el usuario que se utilizará en el sistema
 ```json
 db.createUser({
@@ -47,3 +47,5 @@ db.createUser({
     roles:["readWrite","dbAdmin"]
     })
 ```
+Reiniciamos mongodb  
+>service mongodb restart
