@@ -18,5 +18,16 @@ Por hacer [Interfaces de egresados y empleadores]
     -Ajustar attributos name a todos los inputs.  
     -Agregar Jquery  
     -Crear modulo javascript para hacer crecer las tablas de manera dinamica  
-    -Añadir los parametros necesarios al form  
+    -Añadir los parametros necesarios al form
+
+#Comentarios
+
+Para habilitar el usuario admin de mongo se busca el archivo mongodb.conf y se añade o descomenta la linea  
+security:
+    autorization: "enabled"
+db.createUser({
+    user:"admin",
+    pwd: "admin",
+    roles:["clusterAdmin","readAnyDatabase","readWriteAnyDatabase","userAdminAnyDatabase","dbAdminAnyDatabase"]
+});  
 
