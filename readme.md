@@ -41,6 +41,7 @@ Para loguearte en mongo ahora se usa el comando:
 Ahora nos pasaremos a la base de datos que se usará.
 
 >use encuestas  
+
 Después de esto creamos el usuario que se utilizará en el sistema
 ```json
 db.createUser({
@@ -49,5 +50,7 @@ db.createUser({
     roles:["readWrite","dbAdmin"]
     })
 ```
+
 Reiniciamos mongodb  
+
 >service mongodb restart
