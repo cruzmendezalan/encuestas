@@ -20,7 +20,7 @@ Por hacer [Interfaces de egresados y empleadores]
     -Crear modulo javascript para hacer crecer las tablas de manera dinamica  
     -Añadir los parametros necesarios al form
 
-#Comentarios
+#Configuraciones
   
 Crear usuario administrador mongo
 ```json
@@ -34,4 +34,16 @@ Para habilitar la autenticación de mongo se busca el archivo mongodb.conf y se 
 ```yaml
 security:
     autorization: "enabled"
+```
+Para loguearte en mongo ahora se usa el comando  
+mongo localhost/admin -u admin -p 
+Ahora seleccionas la base de datos del sistema, en este caso "encuestas" por lo tanto  
+>use encuestas
+Después de esto creamos el usuario que se utilizará en el sistema
+```json
+db.createUser({
+    user:"encuestas",
+    pwd:"encuestas",
+    roles:["readWrite","dbAdmin"]
+    })
 ```
