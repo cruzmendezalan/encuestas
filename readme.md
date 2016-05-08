@@ -66,13 +66,13 @@ Reiniciamos mongodb
 /Applications/XAMPP/xamppfiles/etc/php.ini
 
 #Historia
-*Instalación de laravel
-*Instalación de mongo
-*Configuracion de mongo
-*Creacion de usuarios mongo  
-*Asociación de mongo con Laravel
-*Pruebas de inserción  
-*Pruebas de consultas  
-*Esqueleto de encuesta para egresados  
-*Esqueleto de encuestas para empleadores  
-*Modelos para la interaccion de la base de datos  
+* Instalación de laravel
+* Instalación de mongo
+* Configuracion de mongo
+* Creacion de usuarios mongo
+* Asociación de mongo con Laravel
+* Pruebas de inserción
+* Pruebas de consultas
+* Esqueleto de encuesta para egresados
+* Esqueleto de encuestas para empleadores
+* Modelos para la interaccion de la base de datos
