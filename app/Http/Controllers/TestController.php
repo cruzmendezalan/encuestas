@@ -5,16 +5,17 @@ use Illuminate\Http\Request;
 use Response;
 use encuestas\Http\Requests;
 use encuestas\Http\Controllers\Controller;
-use encuestas\Pruebas;
+use encuestas\Egresados;
 
 class TestController extends Controller{
 	
 	public function index(){
-		$datoDePrueba = new Pruebas();
-		$datoDePrueba->nombre = "Alan";
-		$datoDePrueba->save();
-		print_r(Pruebas::all());
-		return view("welcome");
+		//$datoDePrueba = new Egresados();
+		//$datoDePrueba->nombre = "Esmeralda";
+		//$datoDePrueba->save();
+		// User::where('age', 'exists', true)->get();
+		$egresados = Egresados::where("nombre","exists",true)->get(["nombre"]);
+		return view("welcome")->with("egresados",$egresados);
 	}
 }
 ?>

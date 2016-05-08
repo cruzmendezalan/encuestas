@@ -22,3 +22,5 @@ Route::get('egresados', function (){
 Route::get('empleadores', function (){
 	return view('empleadores/empleadores');
 });
+
+Route::get('testmongo',['uses'=>'TestController@index']);

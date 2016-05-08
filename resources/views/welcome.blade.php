@@ -11,13 +11,14 @@
         <div class="container">
             <div class="content">
                 <div class="title">MongoDB</div>
-               
-                    @if(class_exists('Mongo')) 
-                        {{"Existe"}}
-                    @else 
-                        {{"No existe"}}
-                    @endif
-                    
+                <table>
+                   @forelse ($egresados as $egresado)
+                       <tr>
+                           <td>{{ $egresado->nombre }}</td>
+                       </tr>
+                    @empty
+                   @endforelse
+                </table>
             </div>
         </div>
     </body>
