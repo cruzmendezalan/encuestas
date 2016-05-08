@@ -66,10 +66,9 @@ Reiniciamos mongodb
 /Applications/XAMPP/xamppfiles/etc/php.ini
 
 #Historia
-Markup : 
-*Instalación de laravel  
-*Instalación de mongo  
-*Configuracion de mongo  
+*Instalación de laravel
+*Instalación de mongo
+*Configuracion de mongo
 *Creacion de usuarios mongo  
 *Asociación de mongo con Laravel
 *Pruebas de inserción  
