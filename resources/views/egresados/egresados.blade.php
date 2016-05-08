@@ -21,7 +21,7 @@
 									</div>
 								    
 								    <div class="col-md-5">
-								    	<input type="date" class="form-control" id="fechaDeRespuesta">
+								    	<input type="date" class="form-control" id="fechaderespuesta" name="fechaderespuesta">
 								    </div>
 								    
 								</div>
@@ -111,7 +111,7 @@
 										<label for="lorigen" class="control-label">Télefono de contacto:</label>
 									</div>
 									<div class="col-md-7">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="tcontacto" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -121,7 +121,7 @@
 										<label for="ltrabajo" class="control-label">Correo electrónico:</label>
 									</div>
 									<div class="col-md-9">
-										<input type="text" name="ltrabajo" class="form-control">
+										<input type="email" name="correoelectronico" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -133,14 +133,14 @@
 										<label for="lorigen" class="control-label">Carrera:</label>
 									</div>
 									<div class="col-md-7">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="carrera" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<div class="col-md-3">
-										<label for="ltrabajo" class="control-label">Forma de titulación:</label>
+										<label for="ftitulacion" class="control-label">Forma de titulación:</label>
 									</div>
 									<div class="col-md-9">
 										<select name="ftitulacion" class="form-control">
@@ -159,7 +159,7 @@
 										<label for="lorigen" class="control-label">Fecha de inicio de estudios:</label>
 									</div>
 									<div class="col-md-6">
-										<input type="date" name="lorigen" class="form-control">
+										<input type="date" name="finiestudios" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -178,20 +178,20 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Maestría en:</label>
+										<label for="maestria" class="control-label">Maestría en:</label>
 									</div>
 									<div class="col-md-8">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="maestria" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<div class="col-md-6">
-										<label for="ltrabajo" class="control-label">Titulado:</label>
+										<label for="maestriatitulo" class="control-label">Titulado:</label>
 									</div>
 									<div class="col-md-6">
-										<select name="ftitulacion" class="form-control">
+										<select name="maestriatitulo" class="form-control">
 											<option value="si">Si</option>
 											<option value="no">No</option>
 										</select>
@@ -203,20 +203,20 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Doctorado en:</label>
+										<label for="doctorado" class="control-label">Doctorado en:</label>
 									</div>
 									<div class="col-md-8">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="doctorado" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<div class="col-md-6">
-										<label for="ltrabajo" class="control-label">Titulado:</label>
+										<label for="doctoradotitulo" class="control-label">Titulado:</label>
 									</div>
 									<div class="col-md-6">
-										<select name="ftitulacion" class="form-control">
+										<select name="doctoradotitulo" class="form-control">
 											<option value="si">Si</option>
 											<option value="no">No</option>
 										</select>
@@ -228,20 +228,20 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Nombre de la empresa:</label>
+										<label for="nempresa" class="control-label">Nombre de la empresa:</label>
 									</div>
 									<div class="col-md-8">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="nempresa" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<div class="col-md-6">
-										<label for="ltrabajo" class="control-label">Tipo:</label>
+										<label for="tempresa" class="control-label">Tipo:</label>
 									</div>
 									<div class="col-md-6">
-										<select name="ftitulacion" class="form-control">
+										<select name="tempresa" class="form-control">
 											<option value="public">Pública</option>
 											<option value="privada">Privada</option>
 											<option value="propia">Propio</option>
@@ -254,20 +254,20 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Fecha de ingreso:</label>
+										<label for="fingreso" class="control-label">Fecha de ingreso:</label>
 									</div>
 									<div class="col-md-8">
-										<input type="date" name="lorigen" class="form-control">
+										<input type="date" name="fingreso" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<div class="col-md-6">
-										<label for="ltrabajo" class="control-label">Puesto actual:</label>
+										<label for="pactual" class="control-label">Puesto actual:</label>
 									</div>
 									<div class="col-md-6">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="pactual" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -276,20 +276,20 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Puesto inicial:</label>
+										<label for="pinicial" class="control-label">Puesto inicial:</label>
 									</div>
 									<div class="col-md-8">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="pinicial" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<div class="col-md-6">
-										<label for="ltrabajo" class="control-label">Horario laborable:</label>
+										<label for="thorario" class="control-label">Horario laborable:</label>
 									</div>
 									<div class="col-md-6">
-										<select name="ftitulacion" class="form-control">
+										<select name="thorario" class="form-control">
 											<option value="completo">Completo</option>
 											<option value="medio">Medio</option>
 											<option value="horas">Horas</option>
@@ -302,20 +302,20 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Tipo de contrato:</label>
+										<label for="tcontrato" class="control-label">Tipo de contrato:</label>
 									</div>
 									<div class="col-md-8">
-										<input type="date" name="lorigen" class="form-control">
+										<input type="date" name="tcontrato" class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<div class="col-md-6">
-										<label for="ltrabajo" class="control-label">Télefono de la empresa:</label>
+										<label for="tempresa" class="control-label">Télefono de la empresa:</label>
 									</div>
 									<div class="col-md-6">
-										<input type="text" name="lorigen" class="form-control">
+										<input type="text" name="tempresa" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -324,10 +324,10 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Ingreso mensual:</label>
+										<label for="imensual" class="control-label">Ingreso mensual:</label>
 									</div>
 									<div class="col-md-8">
-										<select name="ftitulacion" class="form-control">
+										<select name="imensual" class="form-control">
 											<option value="completo"> < $5000.00 </option>
 											<option value="medio"> De $5001.00 a $10,000.00 </option>
 											<option value="horas"> > $10,000.00 </option>
@@ -338,7 +338,7 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<div class="col-md-4">
-										<label for="lorigen" class="control-label">Sus actividades laborales:</label>
+										<label for="alaborales" class="control-label">Sus actividades laborales:</label>
 									</div>
 									<div class="col-md-8">
 										<select name="ftitulacion" class="form-control">
@@ -405,10 +405,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Qué tiempo transcurrió para que consiguieras tu primer empleo, después de haber egresado?:</label>
+									<label for="tiempoprimerempleo" class="control-label">¿Qué tiempo transcurrió para que consiguieras tu primer empleo, después de haber egresado?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="tiempoprimerempleo" class="form-control">
 										<option value="completo"> < 6 meses</option>
 										<option value="medio"> De 6 a 9 meses</option>
 										<option value="horas"> De 10 a 12 meses </option>
@@ -421,10 +421,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cuáles factores dificultaron o han dificultado tu contratación, al momento de conseguir tu primer empleo?:</label>
+									<label for="difucultadprimerempleo" class="control-label">¿Cuáles factores dificultaron o han dificultado tu contratación, al momento de conseguir tu primer empleo?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="difucultadprimerempleo" class="form-control">
 										<option value="completo">No tener competencias laborales</option>
 										<option value="medio">Ser egresado de la UTM</option>
 										<option value="horas">No estar titulado</option>
@@ -438,10 +438,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas, en general, la formación recibida por la UTM al momento de ejercer tu profesión por primera vez?:</label>
+									<label for="formacionrecibida" class="control-label">¿Cómo calificas, en general, la formación recibida por la UTM al momento de ejercer tu profesión por primera vez?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="formacionrecibida" class="form-control">
 										<option value="completo">Excelente</option>
 										<option value="medio">Muy buena</option>
 										<option value="horas">Buena</option>
@@ -454,10 +454,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Consideras que careces o carecías de algún(os) conocimiento(s) básico(s), al momento de ejercer tu profesión por primera vez, y que no fue(ron) desarrollado(s) durante tu formación profesional?:</label>
+									<label for="carecesconocimientos" class="control-label">¿Consideras que careces o carecías de algún(os) conocimiento(s) básico(s), al momento de ejercer tu profesión por primera vez, y que no fue(ron) desarrollado(s) durante tu formación profesional?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="carecesconocimientos" class="form-control">
 										<option value="completo">Si</option>
 										<option value="medio">No</option>
 									</select>
@@ -467,10 +467,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">Selecciona máximo cinco habilidades importantes que requieres o requerías dominar al momento de ejercer tu profesión por primera vez y que no fueron desarrolladas durante tu formación profesional.</label>
+									<label for="habilidades" class="control-label">Selecciona máximo cinco habilidades importantes que requieres o requerías dominar al momento de ejercer tu profesión por primera vez y que no fueron desarrolladas durante tu formación profesional.</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control" multiple="multiple">
+									<select name="habilidades" class="form-control" multiple="multiple">
 										<option value="comunicar">Comunicar</option>
 										<option value="dirigir">Dirigir</option>
 										<option value="trabajar">Trabajar en equipo</option>
@@ -501,10 +501,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Consideras que careces o carecías del dominio de alguna(s) área(s) de conocimiento básica(s) (sistemas, publicidad,investigación, manufactura, etc.), al momento de ejercer tu profesión por primera vez, y que no fue(ron) desarrollada(s) durante tu formación profesional?:</label>
+									<label for="carecesareasdeconocimiento" class="control-label">¿Consideras que careces o carecías del dominio de alguna(s) área(s) de conocimiento básica(s) (sistemas, publicidad,investigación, manufactura, etc.), al momento de ejercer tu profesión por primera vez, y que no fue(ron) desarrollada(s) durante tu formación profesional?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="carecesareasdeconocimiento" class="form-control">
 										<option value="completo">Si</option>
 										<option value="medio">No</option>
 									</select>
@@ -514,10 +514,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">Selecciona máximo cinco valores o actitudes importantes que requieres o requerías tener al momento de ejercer tu profesión por primera vez y que no fueron fomentados durante tu formación profesional.</label>
+									<label for="valores" class="control-label">Selecciona máximo cinco valores o actitudes importantes que requieres o requerías tener al momento de ejercer tu profesión por primera vez y que no fueron fomentados durante tu formación profesional.</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="valores" class="form-control">
 										<option value="respeto">Respeto</option>
 										<option value="honestidad">Honestidad</option>
 										<option value="lealtad">Lealtad</option>
@@ -547,10 +547,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas las instalaciones (aulas, biblioteca, salas de cómputo, laboratorios, otros) de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?:</label>
+									<label for="calificacioninstalaciones" class="control-label">¿Cómo calificas las instalaciones (aulas, biblioteca, salas de cómputo, laboratorios, otros) de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="calificacioninstalaciones" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -563,10 +563,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas los servicios (escolares y administrativos) de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?:</label>
+									<label for="calificacionserviciosescolares" class="control-label">¿Cómo calificas los servicios (escolares y administrativos) de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="serviciosescolares" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -579,10 +579,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas los equipos, instrumentos, maquinaria, herramientas y software de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
+									<label for="calificacionequipos" class="control-label">¿Cómo calificas los equipos, instrumentos, maquinaria, herramientas y software de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="calificacionequipos" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -595,10 +595,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas, en general, la limpieza de la infraestructura de la UTM, durante tu formación profesional?</label>
+									<label for="calificacionlimpieza" class="control-label">¿Cómo calificas, en general, la limpieza de la infraestructura de la UTM, durante tu formación profesional?</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="calificacionlimpieza" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -611,10 +611,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas el desempeño de los Docentes (transmisión de conocimientos, aclaración de dudas y asesorías) de la UTM,durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
+									<label for="calificaciondocentes" class="control-label">¿Cómo calificas el desempeño de los Docentes (transmisión de conocimientos, aclaración de dudas y asesorías) de la UTM,durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="calificaciondocentes" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -627,10 +627,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas las técnicas (investigación, análisis, comparación, etc.) y métodos (uso de casos de estudio, aplicación del conocimiento en problemas reales, etc.) de enseñanza aplicados por los Docentes de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
+									<label for="calificaciontecnicas" class="control-label">¿Cómo calificas las técnicas (investigación, análisis, comparación, etc.) y métodos (uso de casos de estudio, aplicación del conocimiento en problemas reales, etc.) de enseñanza aplicados por los Docentes de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="calificaciontecnicas" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -643,10 +643,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Cómo calificas la forma y pertinencia de evaluación aplicados por los Docentes de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
+									<label for="calificacionevaluacion" class="control-label">¿Cómo calificas la forma y pertinencia de evaluación aplicados por los Docentes de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="calificacionevaluacion" class="form-control">
 										<option value="completo">Excelentes</option>
 										<option value="medio">Muy buenas</option>
 										<option value="horas">Buenas</option>
@@ -659,10 +659,10 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-6">
-									<label for="lorigen" class="control-label">¿Continuarías realizando algún estudio de posgrado en la Universidad Tecnológica de la Mixteca?:</label>
+									<label for="continuariasestudios" class="control-label">¿Continuarías realizando algún estudio de posgrado en la Universidad Tecnológica de la Mixteca?:</label>
 								</div>
 								<div class="col-md-6">
-									<select name="ftitulacion" class="form-control">
+									<select name="continuariasestudios" class="form-control">
 										<option value="completo">Si</option>
 										<option value="medio">No</option>
 									</select>
@@ -671,12 +671,12 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<label for="lorigen" class="control-label">¿Qué recomendarías mejorar en cada una de las opciones que calificaste como regular o mala?:</label>
+								<label for="recomendaciones" class="control-label">¿Qué recomendarías mejorar en cada una de las opciones que calificaste como regular o mala?:</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<textarea name="" class="form-control"></textarea>
+								<textarea name="recomendaciones" class="form-control"></textarea>
 							</div>
 						</div>
 

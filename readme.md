@@ -25,8 +25,55 @@ Por hacer [Interfaces de egresados y empleadores]
 El sistema cuenta con dos controladores para el manejo de los requests.  
     >EgresadosController
     >EmpleadoresController
-Se añadio al framework Laravel una dependencia para poder trabajar con eloquent. (Los métodos siguen siendo los mismos que la documentación oficial de [Laravel-Eloquent](https://laravel.com/docs/5.1/eloquent)).
+Se añadio al framework Laravel una dependencia para poder trabajar con eloquent. (Los métodos siguen siendo los mismos que la documentación oficial de [Laravel-Eloquent](https://laravel.com/docs/5.1/eloquent)).  
+Lista de nombres de los inputs vista egresados  
+Parte I
+* fechaderespuesta (date)
+* nombre    (text)
+* genero    (select)
+* fnac      (date)
+* nacionalidad  (nacionalidad)
+* lorigen   (text)
+* ltrabajo  (text)
+* tcontacto (text)
+* correoelectronico (email)
+* carrera   (text)
+* ftitulacion   (select)
+* finiestudios  (date)
+* maestria  (text)
+* maestriatitulo    (select)
+* doctoradotitulo   (select)
+* nempresa  (text)
+* tempresa  (select)
+* fingreso  (date)
+* pactual   (text)
+* pinicial  (text)
+* thorario  (select)
+* tcontacto (select)
+* tempresa  (text)
+* imensual  (select)
+* alaborales    (select)
 
+Parte II
+* Tabla, por definir.
+
+Parte III
+* tiempoprimerempleo    (select)
+* difucultadprimerempleo    (select)
+* formacionrecibida (select)
+* carecesconocimientos  (select)
+* habilidades   (select multiple)
+* carecesareasdeconocimiento    (select)
+* valores   (select multiple)
+* calificacioninstalaciones (select)
+* calificacionserviciosescolares    (select)
+* calificacionequipos   (select)
+* calificacionlimpieza  (select)
+* calificaciondocentes  (select)
+* calificaciontecnicas  (select)
+* calificacionevaluacion    (select)
+* continuariasestudios  (select)
+* recomendaciones
 
 #Configuraciones
   
