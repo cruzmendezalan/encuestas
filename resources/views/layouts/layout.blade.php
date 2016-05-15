@@ -7,6 +7,7 @@
 	<title>Encuesta a Egresados</title>
 
 	{!! Html::style('assets/css/bootstrap.css') !!}
+	{!! Html::style('assets/css/encuestas.css') !!}
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -19,17 +20,23 @@
 	<![endif]-->
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar">
 		<div class="container-fluid">
-			<div class="navbar-header">
+			<div class="row">
+			 	<div class="span4"></div>
+			 	<div class="span4"><img class="image-responsive center-block" src="img/utm_logo.png"></div>
+				<div class="span4"></div>
+			</div>
+			<!-- <div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"></a>
-			</div>
+				
+			
+			</div> -->
 
 			
 		</div>
@@ -38,6 +45,7 @@
 	@yield('content')
 
 	<!-- Scripts -->
+	{!! Html::script('assets/js/jquery-2.2.3.min.js') !!}
 	{!! Html::script('assets/js/bootstrap.min.js') !!}
 </body>
 </html>

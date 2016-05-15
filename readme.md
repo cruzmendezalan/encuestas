@@ -9,18 +9,15 @@ Todas las configuraciones que se detallan a continuación son probadas bajo las 
     -[Mongodb 1.1.6](https://docs.mongodb.com/)
     -[Laravel-Mongo](https://github.com/jenssegers/laravel-mongodb)
 ## Documentación de sistema
-4/may/2016  
-Interfaces de egresados y de empleadores.
-    Para visualizar las interfaces con las rutas  
-    /egresados  
-    /empleadores  
+Cómo el sistema manejara dos vistas inicialmente, la primera será para la encuesta a  egresados y la segunda para la encuesta a empleadores.  
+La encuesta a egresados se divira en tres secciones tal y como viene en el PDF proporcionado. Para no manejar un solo archivo HTML usaremos los layouts proporcionados por el framework, para revisar sección por sección se debera accesar a la ruta siguiente:  
+    >encuestas/resources/views/egresados/  
+Aquí se encontraran 3 archivos, cada uno a su correspondiente en el PDF
+* primeraparte.blade.php
+* segundaparte.blade.php
+* terceraparte.blade.php  
 
-
-Por hacer [Interfaces de egresados y empleadores]  
-    -Ajustar attributos name a todos los inputs.  
-    -Agregar Jquery  
-    -Crear modulo javascript para hacer crecer las tablas de manera dinamica  
-    -Añadir los parametros necesarios al form  
+En caso de que se quisiera ampliar la encuesta bastará con agregar los inputs y su label a la sección que se quiera ampliar, es necesario que se agregue el atributo name a los inputs nuevos, en caso contrario la aplicación ignorará cualquier nuevo objeto agregado, revisar también que no se encuentre repetido. De el lado del servidor se realiza un barrido del formulario enviado, el nombre de los atributos es el que se vaciara en la base de datos junto con su correspondiente valor.  
 
 El sistema cuenta con dos controladores para el manejo de los requests.  
     >EgresadosController
@@ -123,3 +120,5 @@ Reiniciamos mongodb
 * Esqueleto de encuesta para egresados
 * Esqueleto de encuestas para empleadores
 * Modelos para la interaccion de la base de datos
+* Ajuste del atributo name en la vista egresados
+* Modulo identificacionEgresado que corresponde a la primera parte de la encuesta a egresados

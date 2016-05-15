@@ -14,7 +14,7 @@
                 <table>
                    @forelse ($egresados as $egresado)
                        <tr>
-                           <td>{{ $egresado->nombre }}</td>
+                           <td>{{ dd($egresado) }}</td>
                        </tr>
                     @empty
                    @endforelse

@@ -12,9 +12,7 @@
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses'=>'TestController@index']);
 Route::get('egresados', function (){
 	return view('egresados/egresados');
 });
