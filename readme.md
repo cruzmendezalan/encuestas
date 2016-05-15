@@ -11,8 +11,7 @@ Todas las configuraciones que se detallan a continuación son probadas bajo las 
 ## Documentación de sistema
 Cómo el sistema manejara dos vistas inicialmente, la primera será para la encuesta a  egresados y la segunda para la encuesta a empleadores.  
 La encuesta a egresados se divira en tres secciones tal y como viene en el PDF proporcionado. Para no manejar un solo archivo HTML usaremos los layouts proporcionados por el framework, para revisar sección por sección se debera accesar a la ruta siguiente:  
-
-    > encuestas/resources/views/egresados/  
+>encuestas/resources/views/egresados/  
 
 Aquí se encontraran 3 archivos, cada uno a su correspondiente en el PDF
 * primeraparte.blade.php
@@ -22,9 +21,8 @@ Aquí se encontraran 3 archivos, cada uno a su correspondiente en el PDF
 En caso de que se quisiera ampliar la encuesta bastará con agregar los inputs y su label a la sección que se quiera ampliar, es necesario que se agregue el atributo name a los inputs nuevos, en caso contrario la aplicación ignorará cualquier nuevo objeto agregado, revisar también que no se encuentre repetido. De el lado del servidor se realiza un barrido del formulario enviado, el nombre de los atributos es el que se vaciara en la base de datos junto con su correspondiente valor.  
 
 El sistema cuenta con dos controladores para el manejo de los requests.  
-
-    > EgresadosController
-    > EmpleadoresController
+>EgresadosController
+>EmpleadoresController
 
 Se añadio al framework Laravel una dependencia para poder trabajar con eloquent. (Los métodos siguen siendo los mismos que la documentación oficial de [Laravel-Eloquent](https://laravel.com/docs/5.1/eloquent)).  
 Lista de nombres de los inputs vista egresados  
