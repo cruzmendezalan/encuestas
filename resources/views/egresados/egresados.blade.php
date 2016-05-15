@@ -28,6 +28,7 @@
 							</div>
 						</div>
 						@include('egresados.primeraparte')
+						<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 						@include('egresados.segundaparte')
 						@include('egresados.terceraparte')
 						</form>
