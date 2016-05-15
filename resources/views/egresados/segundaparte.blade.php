@@ -7,6 +7,13 @@
 </div>
 <div class="row">
 	<div class="col-md-12">
+		<p class="lead text-center seccion">
+			DESARROLLO PROFESIONAL
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
 		<table class="table table-bordered">
 			<thead>
 				<tr>

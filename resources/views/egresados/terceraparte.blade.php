@@ -6,6 +6,13 @@
 	</div>
 </div>
 <div class="row">
+	<div class="col-md-12">
+		<p class="lead text-center seccion">
+			SATISFACCIÓN DE LA FORMACIÓN PROFESIONAL
+		</p>
+	</div>
+</div>
+<div class="row">
 	<div class="form-group">
 		<div class="col-md-6">
 			<label for="tiempoprimerempleo" class="control-label">¿Qué tiempo transcurrió para que consiguieras tu primer empleo, después de haber egresado?:</label>
@@ -270,6 +277,13 @@
 				<option value="medio">No</option>
 			</select>
 		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<p class="lead text-center seccion">
+			RECOMENDACIONES DEL EGRESADO
+		</p>
 	</div>
 </div>
 <div class="row">

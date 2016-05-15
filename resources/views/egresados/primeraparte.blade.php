@@ -6,13 +6,20 @@
 	</div>
 </div>
 <div class="row">
+	<div class="col-md-12">
+		<p class="lead text-center seccion">
+			IDENTIFICACIÓN DEL EGRESADO
+		</p>
+	</div>
+</div>
+<div class="row">
 	<div class="col-md-8">
 		<div class="form-group">
 			<div class="col-md-2">
 				<label for="nombre" class="control-label">Nombre:</label>
 			</div>
 			<div class="col-md-10">
-				<input type="text" name="nombre" class="form-control">
+				<input type="text" name="nombre" class="form-control" required="required">
 			</div>
 		</div>
 		
@@ -95,6 +102,14 @@
 				<input type="email" name="correoelectronico" class="form-control">
 			</div>
 		</div>
+	</div>
+</div>
+<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+<div class="row">
+	<div class="col-md-12">
+		<p class="lead text-center seccion">
+			ESTUDIOS REALIZADOS EN LA UTM
+		</p>
 	</div>
 </div>
 <div class="row">
@@ -193,6 +208,13 @@
 				</select>
 			</div>
 		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<p class="lead text-center seccion">
+			DATOS DEL TRABAJO ACTUAL
+		</p>
 	</div>
 </div>
 <div class="row">

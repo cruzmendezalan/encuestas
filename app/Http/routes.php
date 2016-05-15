@@ -13,12 +13,11 @@
 
 
 Route::get('/', ['uses'=>'TestController@index']);
-Route::get('egresados', function (){
-	return view('egresados/egresados');
-});
 
 Route::get('empleadores', function (){
 	return view('empleadores/empleadores');
 });
 
 Route::get('testmongo',['uses'=>'TestController@index']);
+
+Route::resource('egresados','LogicaEgresadosController');
