@@ -19,4 +19,14 @@ Por hacer [Interfaces de egresados y empleadores]
     -Agregar Jquery  
     -Crear modulo javascript para hacer crecer las tablas de manera dinamica  
     -Añadir los parametros necesarios al form  
+//logueo con autenticación
+mongo --port 27017 -u manager -p 123456 --authenticationDatabase admin
 
+use encuestas
+db.createUser(
+  {
+    user: "encuestas",
+    pwd: "encuestasutm",
+    roles: [ { role: "userAdmin", db: "encuestas" } ]
+  }
+)
