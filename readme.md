@@ -48,9 +48,6 @@ Aquí se encontraran 3 archivos, cada uno a su correspondiente sección en el PD
 * segundaparte.blade.php
 * terceraparte.blade.php  
 
-En caso de que se quisiera ampliar la encuesta bastará con agregar los inputs y su label a la sección que se quiera ampliar, es necesario que se agregue el atributo name a los inputs nuevos, en caso contrario la aplicación ignorará cualquier nuevo objeto agregado, revisar también que no se encuentre repetido. De el lado del servidor se realiza un barrido del formulario enviado, el nombre de los atributos es el que se vaciará en la base de datos junto con su correspondiente valor.
->Se agrego un input oculto de nombre parte1, justo por encima de las instrucciones, sirve para delimitar donde terminan las secciones. El delimitar las secciones permite que en el futuro se agreguen más campos baste con agregarlos al HTML y el sistema sea capas de reconocerlos y agregarlos a la base de datos. Se debe tener presente que se está usando una base de datos No-SQL por tanto los campos pueden crecer indefinidamente.  
-
 El sistema cuenta con dos controladores para el manejo de los requests.  
 * EgresadosController
 * EmpleadoresController
@@ -114,8 +111,8 @@ Parte III
 Crear usuario administrador mongo
 ```json
 db.createUser({
-    user:"admin",
-    pwd: "admin",
+    user:'admin',
+    pwd: 'admin',
     roles:["clusterAdmin","readAnyDatabase","readWriteAnyDatabase","userAdminAnyDatabase","dbAdminAnyDatabase"]
 });  
 ```
@@ -131,7 +128,7 @@ Ahora nos pasaremos a la base de datos que se usará.
 
 >use encuestas  
 
-Después de esto creamos el usuario que se utilizará en el sistema
+Después de esto se crea el usuario que se utilizará en el sistema
 ```json
 db.createUser({
     user:"encuestas",
@@ -140,11 +137,20 @@ db.createUser({
     })
 ```
 
-Reiniciamos mongodb  
+Después se reinicia mongodb  
 
 >service mongodb restart
 
-/Applications/XAMPP/xamppfiles/etc/php.ini
+Si se presenta un error de logueo
+```bash
+sudo rm /var/lib/mongodb/mongod.lock
+sudo mongod --repair --dbpath /var/lib/mongodb
+sudo mongod --fork --logpath /var/lib/mongodb/mongodb.log --dbpath /var/lib/mongodb 
+sudo service mongodb start
+```
+
+Iniciar mongo logueado con el usuario de encuestas
+    mongo localhost/encuestas -u encuestas -p
 
 #Historia
 * Instalación de laravel
