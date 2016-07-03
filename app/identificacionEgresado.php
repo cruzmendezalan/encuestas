@@ -34,7 +34,7 @@ class IdentificacionEgresado extends Eloquent
     
     /**
      * identificacionEgresado belongs to .
-     * Relacion 1 a 1, identificación del egresado con Egresado.
+     * Relación 1 a 1, identificación del egresado con Egresado.
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function egresado()

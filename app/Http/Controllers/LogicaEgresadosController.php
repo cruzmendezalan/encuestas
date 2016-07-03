@@ -88,7 +88,7 @@ class LogicaEgresadosController extends Controller
                                             "calificacioninstalaciones",
                                             "serviciosescolares",
                                             "calificacionequipos",
-                                            "calificacionlimpieza",
+                                            "calificacionlimpieza", 
                                             "calificaciondocentes",
                                             "calificaciontecnicas",
                                             "calificacionevaluacion",

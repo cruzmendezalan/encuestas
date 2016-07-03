@@ -21,9 +21,6 @@ Aquí se encontraran 3 archivos, cada uno a su correspondiente sección en el PD
 * segundaparte.blade.php
 * terceraparte.blade.php  
 
-En caso de que se quisiera ampliar la encuesta bastará con agregar los inputs y su label a la sección que se quiera ampliar, es necesario que se agregue el atributo name a los inputs nuevos, en caso contrario la aplicación ignorará cualquier nuevo objeto agregado, revisar también que no se encuentre repetido. De el lado del servidor se realiza un barrido del formulario enviado, el nombre de los atributos es el que se vaciará en la base de datos junto con su correspondiente valor.
->Se agrego un input oculto de nombre parte1, justo por encima de las instrucciones, sirve para delimitar donde terminan las secciones. El delimitar las secciones permite que en el futuro se agreguen más campos baste con agregarlos al HTML y el sistema sea capas de reconocerlos y agregarlos a la base de datos. Se debe tener presente que se está usando una base de datos No-SQL por tanto los campos pueden crecer indefinidamente.  
-
 El sistema cuenta con dos controladores para el manejo de los requests.  
 * EgresadosController
 * EmpleadoresController

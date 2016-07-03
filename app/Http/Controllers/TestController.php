@@ -16,6 +16,7 @@ class TestController extends Controller{
 		// User::where('age', 'exists', true)->get();
 		//$egresados = Egresado::where("nombre","exists",true)->get(["nombre"]);
 		return view("welcome")->with("egresados",$this->insercionMongo());
+		//return phpinfo();
 	}
 	private function insercionMongo(){
 		$egresado = Egresado::where("nombre","=","Esmeralda")->get();
