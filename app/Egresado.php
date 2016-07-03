@@ -14,9 +14,10 @@ class Egresado extends Eloquent
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function identificacionegresado()
-    {
-    	// hasOne(RelatedModel, foreignKeyOnRelatedModel = egresado_id, localKey = id)
+    public function identificacionegresado(){
     	return $this->embedsOne('encuestas\IdentificacionEgresado');
+    }
+    public function estudiosutm(){
+        return $this->embedsOne('encuestas\EstudiosUTM');
     }
 }
