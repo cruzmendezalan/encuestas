@@ -28,9 +28,18 @@
 							</div>
 						</div>
 						@include('egresados.primeraparte')
-						
 						@include('egresados.segundaparte')
 						@include('egresados.terceraparte')
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<div class="form-group">
+									<input type="submit" class="btn btn-primary btn-lg" value="Enviar Respuestas">
+
+								</div>
+								
+							</div>
+						</div>
+						
 						{!! Form::close() !!}
 				</div>
 			</div>
@@ -38,3 +47,35 @@
 	</div>
 </div>
 @endsection
+
+@section('javascript')
+	<script type="text/javascript">
+		function toTable(empleo){
+			var tabla = $("#desarrolloProfesional tbody").prepend("<tr><td>"+empleo[0]+"</td><td>"+empleo[1]+"</td><td>"+empleo[2]+"</td><td>"+empleo[3]+"</td><td>"+empleo[4]+"</td></tr>")
+		}
+		function agregarEmpleo(){
+			var inputs = $("#form1 input"), count = inputs.length;
+			var empleo = [];
+			$(inputs).each(function(i){
+				var temp = $(this);
+				if (temp.val() === '') {
+					console.log("vacio")
+					$(temp).parent().addClass('has-error');
+					$(temp).tooltip('show');
+					return;
+				}
+				empleo.push(temp.val())
+				if (!--count) {
+					$("#modal-id").modal('hide');//ocultar modal
+					toTable(empleo);//enviar array a tabla
+					$("#form1 input").val("")//limpiar formulario
+				}
+			});
+
+		}
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		  console.re.log('remote log test');
+		})
+	</script>
+@stop

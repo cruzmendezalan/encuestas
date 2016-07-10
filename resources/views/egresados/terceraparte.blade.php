@@ -18,7 +18,8 @@
 			<label for="tiempoprimerempleo" class="control-label">¿Qué tiempo transcurrió para que consiguieras tu primer empleo, después de haber egresado?:</label>
 		</div>
 		<div class="col-md-6">
-			<select name="tiempoprimerempleo" class="form-control">
+			<select name="tiempoprimerempleo" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo"> < 6 meses</option>
 				<option value="medio"> De 6 a 9 meses</option>
 				<option value="horas"> De 10 a 12 meses </option>
@@ -34,7 +35,8 @@
 			<label for="difucultadprimerempleo" class="control-label">¿Cuáles factores dificultaron o han dificultado tu contratación, al momento de conseguir tu primer empleo?:</label>
 		</div>
 		<div class="col-md-6">
-			<select name="difucultadprimerempleo" class="form-control">
+			<select name="difucultadprimerempleo" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">No tener competencias laborales</option>
 				<option value="medio">Ser egresado de la UTM</option>
 				<option value="horas">No estar titulado</option>
@@ -51,7 +53,8 @@
 			<label for="formacionrecibida" class="control-label">¿Cómo calificas, en general, la formación recibida por la UTM al momento de ejercer tu profesión por primera vez?:</label>
 		</div>
 		<div class="col-md-6">
-			<select name="formacionrecibida" class="form-control">
+			<select name="formacionrecibida" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelente</option>
 				<option value="medio">Muy buena</option>
 				<option value="horas">Buena</option>
@@ -67,7 +70,8 @@
 			<label for="carecesconocimientos" class="control-label">¿Consideras que careces o carecías de algún(os) conocimiento(s) básico(s), al momento de ejercer tu profesión por primera vez, y que no fue(ron) desarrollado(s) durante tu formación profesional?:</label>
 		</div>
 		<div class="col-md-6">
-			<select name="carecesconocimientos" class="form-control">
+			<select name="carecesconocimientos" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Si</option>
 				<option value="medio">No</option>
 			</select>
@@ -80,7 +84,8 @@
 			<label for="habilidades" class="control-label">Selecciona máximo cinco habilidades importantes que requieres o requerías dominar al momento de ejercer tu profesión por primera vez y que no fueron desarrolladas durante tu formación profesional.</label>
 		</div>
 		<div class="col-md-6">
-			<select name="habilidades" class="form-control" multiple="multiple">
+			<select name="habilidades" class="form-control" multiple="multiple" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="comunicar">Comunicar</option>
 				<option value="dirigir">Dirigir</option>
 				<option value="trabajar">Trabajar en equipo</option>
@@ -115,6 +120,7 @@
 		</div>
 		<div class="col-md-6">
 			<select name="carecesareasdeconocimiento" class="form-control">
+			<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Si</option>
 				<option value="medio">No</option>
 			</select>
@@ -127,7 +133,8 @@
 			<label for="valores" class="control-label">Selecciona máximo cinco valores o actitudes importantes que requieres o requerías tener al momento de ejercer tu profesión por primera vez y que no fueron fomentados durante tu formación profesional.</label>
 		</div>
 		<div class="col-md-6">
-			<select name="valores" class="form-control">
+			<select name="valores" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="respeto">Respeto</option>
 				<option value="honestidad">Honestidad</option>
 				<option value="lealtad">Lealtad</option>
@@ -160,7 +167,8 @@
 			<label for="calificacioninstalaciones" class="control-label">¿Cómo calificas las instalaciones (aulas, biblioteca, salas de cómputo, laboratorios, otros) de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?:</label>
 		</div>
 		<div class="col-md-6">
-			<select name="calificacioninstalaciones" class="form-control">
+			<select name="calificacioninstalaciones" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -176,7 +184,8 @@
 			<label for="calificacionserviciosescolares" class="control-label">¿Cómo calificas los servicios (escolares y administrativos) de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?:</label>
 		</div>
 		<div class="col-md-6">
-			<select name="serviciosescolares" class="form-control">
+			<select name="serviciosescolares" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -192,7 +201,8 @@
 			<label for="calificacionequipos" class="control-label">¿Cómo calificas los equipos, instrumentos, maquinaria, herramientas y software de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 		</div>
 		<div class="col-md-6">
-			<select name="calificacionequipos" class="form-control">
+			<select name="calificacionequipos" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -208,7 +218,8 @@
 			<label for="calificacionlimpieza" class="control-label">¿Cómo calificas, en general, la limpieza de la infraestructura de la UTM, durante tu formación profesional?</label>
 		</div>
 		<div class="col-md-6">
-			<select name="calificacionlimpieza" class="form-control">
+			<select name="calificacionlimpieza" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -224,7 +235,8 @@
 			<label for="calificaciondocentes" class="control-label">¿Cómo calificas el desempeño de los Docentes (transmisión de conocimientos, aclaración de dudas y asesorías) de la UTM,durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 		</div>
 		<div class="col-md-6">
-			<select name="calificaciondocentes" class="form-control">
+			<select name="calificaciondocentes" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -240,7 +252,8 @@
 			<label for="calificaciontecnicas" class="control-label">¿Cómo calificas las técnicas (investigación, análisis, comparación, etc.) y métodos (uso de casos de estudio, aplicación del conocimiento en problemas reales, etc.) de enseñanza aplicados por los Docentes de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 		</div>
 		<div class="col-md-6">
-			<select name="calificaciontecnicas" class="form-control">
+			<select name="calificaciontecnicas" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -256,7 +269,8 @@
 			<label for="calificacionevaluacion" class="control-label">¿Cómo calificas la forma y pertinencia de evaluación aplicados por los Docentes de la UTM, durante tu formación profesional y que repercutieron al momento de ejercer tu profesión por primera vez?</label>
 		</div>
 		<div class="col-md-6">
-			<select name="calificacionevaluacion" class="form-control">
+			<select name="calificacionevaluacion" class="form-control" required>
+				<option disabled selected value> -- selecciona una opción -- </option>
 				<option value="completo">Excelentes</option>
 				<option value="medio">Muy buenas</option>
 				<option value="horas">Buenas</option>
@@ -293,6 +307,9 @@
 </div>
 <div class="row">
 	<div class="col-md-12">
-		<textarea name="recomendaciones" class="form-control"></textarea>
+		<div class="form-group">
+			<textarea name="recomendaciones" class="form-control"></textarea>
+		</div>
+		
 	</div>
 </div>

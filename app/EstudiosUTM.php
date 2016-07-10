@@ -6,8 +6,9 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class EstudiosUTM extends Eloquent
 {
-    protected $primaryKey = '__id';
-    protected $fillable = ["carrera",
+    protected $primaryKey = '_id';
+    protected $collection = 'estudiosutm_collection';
+    protected $fillable = [ "carrera",
                           	"ftitulacion",
                             "finiestudios",
                             "maestria",
@@ -19,9 +20,7 @@ class EstudiosUTM extends Eloquent
      * Relación 1 a 1, identificación del egresado con Egresado.
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function egresado()
-    {
-    	// belongsTo(RelatedModel, foreignKey = _id, keyOnRelatedModel = id)
+    public function egresado(){
     	return $this->belongsTo('encuestas\Egresado');
     }
 }

@@ -8,7 +8,7 @@ class IdentificacionEgresado extends Eloquent
 {
 	//coleccion que servira a la persistencia de la identificacion del egresado (Parte 1  de la encuesta a egresados)
     protected $collection = 'identificacionEgresado_collection';
-    protected $primaryKey = '__id';
+    protected $primaryKey = '_id';
     protected $fillable = ['fechaderespuesta',
                       'nombre',
                       'genero',

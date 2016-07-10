@@ -17,7 +17,7 @@ Route::get('/', ['uses'=>'TestController@index']);
 Route::get('empleadores', function (){
 	return view('empleadores/empleadores');
 });
-
+//Route::get('egresados', ['uses'=>'LogicaEgresadosController@index']);
 Route::get('testmongo',['uses'=>'TestController@index']);
 
 Route::resource('egresados','LogicaEgresadosController');

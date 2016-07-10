@@ -6,16 +6,12 @@ use Response;
 use encuestas\Http\Requests;
 use encuestas\Http\Controllers\Controller;
 use encuestas\Egresado;
+use Faker\Factory as Faker;
 
 class TestController extends Controller{
 	
 	public function index(){
-		$datoDePrueba = new Egresado();
-		//$datoDePrueba->nombre = "Esmeralda";
-		//$datoDePrueba->save();
-		// User::where('age', 'exists', true)->get();
-		//$egresados = Egresado::where("nombre","exists",true)->get(["nombre"]);
-		return view("welcome")->with("egresados",$this->insercionMongo());
+		return view("welcome");
 	}
 	private function insercionMongo(){
 		$egresado = Egresado::where("nombre","=","Esmeralda")->get();

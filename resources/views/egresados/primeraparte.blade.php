@@ -13,24 +13,24 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-2">
+			<div class="col-md-5">
 				<label for="nombre" class="control-label">Nombre:</label>
 			</div>
-			<div class="col-md-10">
+			<div class="col-md-7">
 				<input type="text" name="nombre" class="form-control" required="required">
 			</div>
 		</div>
-		
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
+			<div class="col-md-3">
 				<label for="genero">Genero: </label>
 			</div>
-			<div class="col-md-6">
-				<select name="genero" class="form-control">
+			<div class="col-md-9">
+				<select name="genero" class="form-control" required>
+					<option disabled selected value> -- selecciona una opción -- </option>
 					<option value="mujer">Mujer</option>
 					<option value="hombre">Hombre</option>
 				</select>
@@ -104,7 +104,6 @@
 		</div>
 	</div>
 </div>
-<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 <div class="row">
 	<div class="col-md-12">
 		<p class="lead text-center seccion">
@@ -129,7 +128,8 @@
 				<label for="ftitulacion" class="control-label">Forma de titulación:</label>
 			</div>
 			<div class="col-md-9">
-				<select name="ftitulacion" class="form-control">
+				<select name="ftitulacion" class="form-control" required>
+					<option disabled selected value> -- selecciona una opción -- </option>
 					<option value="tesis">Tesis</option>
 					<option value="cenaval">Ceneval</option>
 					<option value="notitulado">No titulado</option>
@@ -141,21 +141,21 @@
 <div class="row">
 	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
-				<label for="lorigen" class="control-label">Fecha de inicio de estudios:</label>
+			<div class="col-md-5 text-left">
+				<label for="lorigen" class="control-label pull-left">Fecha de inicio de estudios:</label>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<input type="date" name="finiestudios" class="form-control">
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
+			<div class="col-md-3">
 				<label for="ltrabajo" class="control-label">Fecha de fin de estudios:</label>
 			</div>
-			<div class="col-md-6">
-				<input type="date" name="lorigen" class="form-control">
+			<div class="col-md-9">
+				<input type="date" name="ffinestudios" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -178,6 +178,7 @@
 			</div>
 			<div class="col-md-6">
 				<select name="maestriatitulo" class="form-control">
+					<option disabled selected value> -- selecciona una opción -- </option>
 					<option value="si">Si</option>
 					<option value="no">No</option>
 				</select>
@@ -203,6 +204,7 @@
 			</div>
 			<div class="col-md-6">
 				<select name="doctoradotitulo" class="form-control">
+					<option disabled selected value> -- selecciona una opción -- </option>
 					<option value="si">Si</option>
 					<option value="no">No</option>
 				</select>
@@ -218,22 +220,22 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="nempresa" class="control-label">Nombre de la empresa:</label>
+				<label for="nempresa" class="control-label">Nombre empresa:</label>
 			</div>
 			<div class="col-md-8">
 				<input type="text" name="nempresa" class="form-control">
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<label for="tempresa" class="control-label">Tipo:</label>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<select name="tempresa" class="form-control">
 					<option value="public">Pública</option>
 					<option value="privada">Privada</option>
@@ -244,7 +246,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
 				<label for="fingreso" class="control-label">Fecha de ingreso:</label>
@@ -254,19 +256,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<label for="pactual" class="control-label">Puesto actual:</label>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<input type="text" name="pactual" class="form-control">
 			</div>
 		</div>
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
 				<label for="pinicial" class="control-label">Puesto inicial:</label>
@@ -276,12 +278,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<label for="thorario" class="control-label">Horario laborable:</label>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<select name="thorario" class="form-control">
 					<option value="completo">Completo</option>
 					<option value="medio">Medio</option>
@@ -292,23 +294,23 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
 				<label for="tcontrato" class="control-label">Tipo de contrato:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="date" name="tcontrato" class="form-control">
+				<input type="text" name="tcontrato" class="form-control">
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-6">
-				<label for="tempresa" class="control-label">Télefono de la empresa:</label>
+			<div class="col-md-4">
+				<label for="telempresa" class="control-label">Télefono de la empresa:</label>
 			</div>
-			<div class="col-md-6">
-				<input type="text" name="tempresa" class="form-control">
+			<div class="col-md-8">
+				<input type="text" name="telempresa" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -334,7 +336,7 @@
 				<label for="alaborales" class="control-label">Sus actividades laborales:</label>
 			</div>
 			<div class="col-md-8">
-				<select name="ftitulacion" class="form-control">
+				<select name="alaborales" class="form-control" required>
 					<option value="completo"> Requieren de la formación de mi carrera.</option>
 					<option value="medio"> No requieren de la formación de mi carrera.</option>
 					<option value="horas"> No requieren de una profesión. </option>

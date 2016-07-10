@@ -21,24 +21,12 @@
 </head>
 <body>
 	<nav class="navbar">
-		<div class="container-fluid">
+		<div class="container-fluid" id="main">
 			<div class="row">
 			 	<div class="span4"></div>
-			 	<div class="span4"><img class="image-responsive center-block" src="img/utm_logo.png"></div>
+			 	<div class="span4"><img class="img-responsive center-block" src="img/utm_logo.png"></div>
 				<div class="span4"></div>
 			</div>
-			<!-- <div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				
-			
-			</div> -->
-
-			
 		</div>
 	</nav>
 
@@ -47,5 +35,13 @@
 	<!-- Scripts -->
 	{!! Html::script('assets/js/jquery-2.2.3.min.js') !!}
 	{!! Html::script('assets/js/bootstrap.min.js') !!}
+	{!! Html::script('assets/js/smoothstate.js') !!}
+	<script type="text/javascript" charset="utf-8" >
+		$(function() {
+		$('#main').smoothState();
+		console.log("sas")
+		})(jQuery);
+	</script>
+	@yield('javascript')
 </body>
 </html>

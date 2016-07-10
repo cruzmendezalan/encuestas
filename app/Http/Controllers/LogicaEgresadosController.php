@@ -7,7 +7,13 @@ use Illuminate\Http\Request;
 use encuestas\Http\Requests;
 use encuestas\Http\Controllers\Controller;
 use encuestas\Egresado;
-use encuestas\IdentificacionEgresado;
+use encuestas\identificacionEgresado;
+use encuestas\EstudiosUTM;
+use encuestas\DatosTrabajoActual;
+use encuestas\Empleadores;
+
+
+
 
 class LogicaEgresadosController extends Controller
 {
@@ -44,24 +50,25 @@ class LogicaEgresadosController extends Controller
      */
     public function store(Request $request)
     {
-        $identificacionegresadoReq = $request->only(
-                                            "fechaderespuesta",
-                                            "nombre",
-                                            "genero",
-                                            "fnac",
-                                            "nacionalidad",
-                                            "lorigen",
-                                            "ltrabajo",
-                                            "tcontacto",
-                                            "correoelectronico");
-        //Nuevo egresado
-        $egresado = new Egresado();
-        //Union entre los datos de identificacion y el egresado
-        $datosDeIdentificacion = $egresado->identificacionegresado()->create($identificacionegresadoReq);
-        //Almacenando la relación
-        $datosDeIdentificacion->save();
+        $requestOriginal = $request;
+        $request = $request->only(
+                            "fechaderespuesta",
+                            "nombre",
+                            "genero",
+                            "fnac",
+                            "nacionalidad",
+                            "lorigen",
+                            "ltrabajo",
+                            "tcontacto",
+                            "correoelectronico");
 
-        $estudiosenutmReq           = $request->only(
+        //$identificacionegresadoEncuesta = new identificacionEgresado($request);
+        $egresado = Egresado::create();
+        $identificacionegresadoEncuesta = $egresado->identificacionegresado()->create( $request);
+        $egresado->save();
+
+        $request = $requestOriginal;
+        $estudiosenutmReq       = $request->only(
                                             "carrera",
                                             "ftitulacion",
                                             "finiestudios",
@@ -69,6 +76,12 @@ class LogicaEgresadosController extends Controller
                                             "maestriatitulo",
                                             "doctorado",
                                             "doctoradotitulo");
+
+        //$estudiosenutmEncuesta  = new EstudiosUTM($estudiosenutmReq);
+        $estudiosenutmEncuesta  = $egresado->estudiosutm()->create($estudiosenutmReq);
+        $egresado->save();
+
+        $request = $requestOriginal;
         $datostrabajoactualReq      = $request->only(
                                             "nempresa",
                                             "tempresa",
@@ -78,6 +91,12 @@ class LogicaEgresadosController extends Controller
                                             "thorario",
                                             "tcontrato",
                                             "imensual");
+
+        // $datostrabajoactualEncuesta = new DatosTrabajoActual($datostrabajoactualReq);
+        $datostrabajoactualEncuesta = $egresado->datostrabajoactual()->create($datostrabajoactualReq);
+        $egresado->save();
+        $request = $requestOriginal;
+        
         $satisfacionprofesionalReq  = $request->only(
                                             "tiempoprimerempleo",
                                             "difucultadprimerempleo",
@@ -93,9 +112,16 @@ class LogicaEgresadosController extends Controller
                                             "calificaciontecnicas",
                                             "calificacionevaluacion",
                                             "continuariasestudios");
-        $recomendacionesegresado    = $request->only(
-                                            "recomendacionesegresado");
+        $satisfacionprofesional = $egresado->satisfacciondelaformacionprofesional()->create($satisfacionprofesionalReq);
+        $egresado->save();
+
+        $request = $requestOriginal;
+        $recomendacionesegresadoReq    = $request->only(
+                                            "recomendaciones");
+        $recomendaciones = $egresado->recomendacionesdelegresado()->create($recomendacionesegresadoReq);
+        $egresado->save();
         return dd($egresado);
+        
     }
 
     /**
