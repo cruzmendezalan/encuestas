@@ -118,7 +118,17 @@
 				<label for="lorigen" class="control-label">Carrera:</label>
 			</div>
 			<div class="col-md-7">
-				<input type="text" name="carrera" class="form-control">
+				<select name="carrera" class="form-control" required>
+					<option disabled selected value> -- selecciona una opción -- </option>
+					<option value="computacion">Ingeniería en Computacion</option>
+					<option value="disenio">Ingeniería en Diseño</option>
+					<option value="electronica">Ingeniería en Electrónica</option>
+					<option value="alimentos">Ingeniería en Alimentos</option>
+					<option value="industrial">Ingeniería Industrial</option>
+					<option value="fisica">Ingeniería en Física Aplicada</option>
+					<option value="empresariales">Licenciatura en Ciencias Empresariales</option>
+					<option value="matematicas">Licenciatura en Matemáticas Aplicadas</option>
+				</select>
 			</div>
 		</div>
 	</div>

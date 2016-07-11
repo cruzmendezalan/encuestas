@@ -120,7 +120,7 @@ class LogicaEgresadosController extends Controller
                                             "recomendaciones");
         $recomendaciones = $egresado->recomendacionesdelegresado()->create($recomendacionesegresadoReq);
         $egresado->save();
-        return dd($egresado);
+        return view('agradecimiento.gracias');
         
     }
 
