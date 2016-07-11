@@ -54,6 +54,7 @@ class LogicaEgresadosController extends Controller
         $request = $request->only(
                             "fechaderespuesta",
                             "nombre",
+                            "curp",
                             "genero",
                             "fnac",
                             "nacionalidad",

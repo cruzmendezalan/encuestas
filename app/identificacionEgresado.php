@@ -11,6 +11,7 @@ class IdentificacionEgresado extends Eloquent
     protected $primaryKey = '_id';
     protected $fillable = ['fechaderespuesta',
                       'nombre',
+                      'curp',
                       'genero',
                       'fnac',
                       'nacionalidad',
