@@ -15,20 +15,30 @@
 <div class="row">
 	<div class="col-md-6">
 		<div class="form-group">
-			<div class="col-md-5">
+			<div class="col-md-3">
 				<label for="nombre" class="control-label">Nombre:</label>
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-9">
 				<input type="text" name="nombre" class="form-control" required="required">
 			</div>
 		</div>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<div class="form-group">
 			<div class="col-md-3">
-				<label for="genero">Genero: </label>
+				<label for="genero">CURP: </label>
 			</div>
 			<div class="col-md-9">
+				<input type="text" name="curp" class="form-control" required="required">
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<div class="form-group">
+			<div class="col-md-6">
+				<label for="genero">Genero: </label>
+			</div>
+			<div class="col-md-6">
 				<select name="genero" class="form-control" required>
 					<option disabled selected value> -- selecciona una opción -- </option>
 					<option value="mujer">Mujer</option>
