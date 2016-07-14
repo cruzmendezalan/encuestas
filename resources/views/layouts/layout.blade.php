@@ -36,12 +36,6 @@
 	{!! Html::script('assets/js/jquery-2.2.3.min.js') !!}
 	{!! Html::script('assets/js/bootstrap.min.js') !!}
 	{!! Html::script('assets/js/smoothstate.js') !!}
-	<script type="text/javascript" charset="utf-8" >
-		$(function() {
-		$('#main').smoothState();
-		console.log("sas")
-		})(jQuery);
-	</script>
 	@yield('javascript')
 </body>
 </html>

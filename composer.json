@@ -9,7 +9,8 @@
         "laravel/framework": "5.1.*",
         "laravelcollective/html": "5.1.*",
         "mongofill/mongofill": "dev-master",
-        "mongodb/mongodb":"1.0.*"
+        "mongodb/mongodb":"1.0.*",
+        "barryvdh/laravel-dompdf": "0.6.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

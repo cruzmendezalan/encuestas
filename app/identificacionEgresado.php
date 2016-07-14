@@ -13,11 +13,11 @@ class IdentificacionEgresado extends Eloquent
                       'nombre',
                       'curp',
                       'genero',
-                      'fnac',
+                      'fechadenacimiento',
                       'nacionalidad',
-                      'lorigen',
-                      'ltrabajo',
-                      'tcontacto',
+                      'lugardeorigen',
+                      'lugardetrabajo',
+                      'telefonodecontacto',
                       'correoelectronico'];
     /**
      *

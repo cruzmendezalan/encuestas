@@ -34,5 +34,8 @@ class Egresado extends Eloquent
         return $this->embedsOne('encuestas\recomendacionesDelEgresado');
     }
 
+    public function desarrolloprofesional(){ //Incrustar varios empleos en un mismo objeto
+        return $this->embedsMany('encuestas\DesarrolloProfesional');
+    }
 
 }

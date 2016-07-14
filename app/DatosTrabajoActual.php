@@ -9,15 +9,11 @@ class DatosTrabajoActual extends Eloquent
     protected $primaryKey = '_id';
     protected $collection = 'datostrabajoactual_collection';
 
-    protected $fillable = ["nempresa",
-				            "tempresa",
-				            "fingreso",
-				            "pactual",
-				            "pinicial",
-				            "thorario",
-				            "tcontrato",
-				            "tempresa",
-				            "imensual"];
+    protected $fillable = ["empresaenlaquelaboro",
+    						"puestoinicial",
+    						"puestofinal",
+    						"antiguedad",
+    						"funcionesprincipales"];
 
             
 

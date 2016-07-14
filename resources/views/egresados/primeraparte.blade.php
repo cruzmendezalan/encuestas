@@ -13,7 +13,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-5">
 		<div class="form-group">
 			<div class="col-md-3">
 				<label for="nombre" class="control-label">Nombre:</label>
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-2">
+	<div class="col-md-3">
 		<div class="form-group">
 			<div class="col-md-6">
 				<label for="genero">Genero: </label>
@@ -52,10 +52,10 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-5">
-				<label for="fnac" class="control-label">Fecha de nacimiento:</label>
+				<label for="fechadenacimiento" class="control-label">Fecha de nacimiento:</label>
 			</div>
 			<div class="col-md-7">
-				<input type="date" name="fnac" class="form-control">
+				<input type="date" name="fechadenacimiento" class="form-control" required>
 			</div>
 		</div>
 	</div>
@@ -65,7 +65,7 @@
 				<label for="nacionalidad" class="control-label">Nacionalidad:</label>
 			</div>
 			<div class="col-md-9">
-				<input type="text" name="nacionalidad" class="form-control">
+				<input type="text" name="nacionalidad" class="form-control" required>
 			</div>
 		</div>
 	</div>
@@ -74,20 +74,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-5">
-				<label for="lorigen" class="control-label">Lugar de origen:</label>
+				<label for="lugardeorigen" class="control-label">Lugar de origen:</label>
 			</div>
 			<div class="col-md-7">
-				<input type="text" name="lorigen" class="form-control">
+				<input type="text" name="lugardeorigen" class="form-control" required>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-3">
-				<label for="ltrabajo" class="control-label">Lugar de trabajo:</label>
+				<label for="lugardetrabajo" class="control-label">Lugar de trabajo:</label>
 			</div>
 			<div class="col-md-9">
-				<input type="text" name="ltrabajo" class="form-control">
+				<input type="text" name="lugardetrabajo" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -96,20 +96,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-5">
-				<label for="lorigen" class="control-label">Télefono de contacto:</label>
+				<label for="telefonodecontacto" class="control-label">Télefono de contacto:</label>
 			</div>
 			<div class="col-md-7">
-				<input type="text" name="tcontacto" class="form-control">
+				<input type="text" name="telefonodecontacto" class="form-control" required>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-3">
-				<label for="ltrabajo" class="control-label">Correo electrónico:</label>
+				<label for="correoelectronico" class="control-label">Correo electrónico:</label>
 			</div>
 			<div class="col-md-9">
-				<input type="email" name="correoelectronico" class="form-control">
+				<input type="email" name="correoelectronico" class="form-control" required>
 			</div>
 		</div>
 	</div>
@@ -125,7 +125,7 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-5">
-				<label for="lorigen" class="control-label">Carrera:</label>
+				<label for="carrera" class="control-label">Carrera:</label>
 			</div>
 			<div class="col-md-7">
 				<select name="carrera" class="form-control" required>
@@ -145,10 +145,10 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-3">
-				<label for="ftitulacion" class="control-label">Forma de titulación:</label>
+				<label for="formadetitulacion" class="control-label">Forma de titulación:</label>
 			</div>
 			<div class="col-md-9">
-				<select name="ftitulacion" class="form-control" required>
+				<select name="formadetitulacion" class="form-control" required>
 					<option disabled selected value> -- selecciona una opción -- </option>
 					<option value="tesis">Tesis</option>
 					<option value="cenaval">Ceneval</option>
@@ -162,20 +162,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-5 text-left">
-				<label for="lorigen" class="control-label pull-left">Fecha de inicio de estudios:</label>
+				<label for="fechadeinicioestudios" class="control-label pull-left">Fecha de inicio de estudios:</label>
 			</div>
 			<div class="col-md-7">
-				<input type="date" name="finiestudios" class="form-control">
+				<input type="date" name="fechadeinicioestudios" class="form-control">
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-3">
-				<label for="ltrabajo" class="control-label">Fecha de fin de estudios:</label>
+				<label for="fechadefinestudios" class="control-label">Fecha de fin de estudios:</label>
 			</div>
 			<div class="col-md-9">
-				<input type="date" name="ffinestudios" class="form-control">
+				<input type="date" name="fechadefinestudios" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -243,20 +243,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="nempresa" class="control-label">Nombre empresa:</label>
+				<label for="nombredeempresa" class="control-label">Nombre empresa:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="text" name="nempresa" class="form-control">
+				<input type="text" name="nombredeempresa" class="form-control">
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="tempresa" class="control-label">Tipo:</label>
+				<label for="tipodeempresa" class="control-label">Tipo:</label>
 			</div>
 			<div class="col-md-8">
-				<select name="tempresa" class="form-control">
+				<select name="tipodeempresa" class="form-control">
 					<option value="public">Pública</option>
 					<option value="privada">Privada</option>
 					<option value="propia">Propio</option>
@@ -269,20 +269,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="fingreso" class="control-label">Fecha de ingreso:</label>
+				<label for="fechadeingreso" class="control-label">Fecha de ingreso:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="date" name="fingreso" class="form-control">
+				<input type="date" name="fechadeingreso" class="form-control">
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="pactual" class="control-label">Puesto actual:</label>
+				<label for="puestoactual" class="control-label">Puesto actual:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="text" name="pactual" class="form-control">
+				<input type="text" name="puestoactual" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -291,20 +291,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="pinicial" class="control-label">Puesto inicial:</label>
+				<label for="puestoinicial" class="control-label">Puesto inicial:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="text" name="pinicial" class="form-control">
+				<input type="text" name="puestoinicial" class="form-control">
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="thorario" class="control-label">Horario laborable:</label>
+				<label for="tipodehorariolaboral" class="control-label">Horario laborable:</label>
 			</div>
 			<div class="col-md-8">
-				<select name="thorario" class="form-control">
+				<select name="tipodehorariolaboral" class="form-control">
 					<option value="completo">Completo</option>
 					<option value="medio">Medio</option>
 					<option value="horas">Horas</option>
@@ -317,20 +317,20 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="tcontrato" class="control-label">Tipo de contrato:</label>
+				<label for="tipodecontrato" class="control-label">Tipo de contrato:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="text" name="tcontrato" class="form-control">
+				<input type="text" name="tipodecontrato" class="form-control">
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="telempresa" class="control-label">Télefono de la empresa:</label>
+				<label for="telefonodeempresa" class="control-label">Télefono de la empresa:</label>
 			</div>
 			<div class="col-md-8">
-				<input type="text" name="telempresa" class="form-control">
+				<input type="text" name="telefonodeempresa" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -339,10 +339,10 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="imensual" class="control-label">Ingreso mensual:</label>
+				<label for="ingresomensual" class="control-label">Ingreso mensual:</label>
 			</div>
 			<div class="col-md-8">
-				<select name="imensual" class="form-control">
+				<select name="ingresomensual" class="form-control">
 					<option value="completo"> < $5000.00 </option>
 					<option value="medio"> De $5001.00 a $10,000.00 </option>
 					<option value="horas"> > $10,000.00 </option>
@@ -353,13 +353,13 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<div class="col-md-4">
-				<label for="alaborales" class="control-label">Sus actividades laborales:</label>
+				<label for="susactividadeslaborales" class="control-label">Sus actividades laborales:</label>
 			</div>
 			<div class="col-md-8">
-				<select name="alaborales" class="form-control" required>
-					<option value="completo"> Requieren de la formación de mi carrera.</option>
-					<option value="medio"> No requieren de la formación de mi carrera.</option>
-					<option value="horas"> No requieren de una profesión. </option>
+				<select name="susactividadeslaborales" class="form-control" required>
+					<option value="requierendelaformaciondemicarrera"> Requieren de la formación de mi carrera.</option>
+					<option value="norequierendelaformaciondemicarrera"> No requieren de la formación de mi carrera.</option>
+					<option value="norequierendeunaprofesion"> No requieren de una profesión. </option>
 				</select>
 			</div>
 		</div>

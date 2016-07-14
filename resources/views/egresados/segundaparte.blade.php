@@ -14,6 +14,7 @@
 </div>
 <div class="row">
 	<div class="col-md-12">
+		<input type="hidden" name="desarrolloprof" id="desarrolloprof" value="">
 		<table class="table table-bordered" id="desarrolloProfesional">
 			<thead>
 				<tr>

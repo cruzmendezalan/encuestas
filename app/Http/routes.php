@@ -14,6 +14,8 @@
 
 Route::get('/', ['uses'=>'TestController@index']);
 
+Route::get('empleos', ['uses'=>'TestController@testEmpleos']);
+
 Route::get('empleadores', function (){
 	return view('empleadores/empleadores');
 });
@@ -23,3 +25,6 @@ Route::get('empleadores', function (){
 // });
 
 Route::resource('egresados','LogicaEgresadosController');
+Route::get('reporte',['uses'=>'TestController@reporte']);
+Route::get('reportes/egresados', 'PDFController@reporteEncuestaEgresados');
+Route::get('reportes/empleadores', 'PDFController@reporteEncuestaEmpleadores');

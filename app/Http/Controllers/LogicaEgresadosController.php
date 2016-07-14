@@ -11,16 +11,17 @@ use encuestas\identificacionEgresado;
 use encuestas\EstudiosUTM;
 use encuestas\DatosTrabajoActual;
 use encuestas\Empleadores;
+use encuestas\DesarrolloProfesional;
 
 
 
 
 class LogicaEgresadosController extends Controller
 {
-    
+    //const $LONGITUDMINIMADEJSON  = 10;// Contemplando que se envíe nombres falsos o muy cortos
 
     /**
-     * Display a listing of the resource.
+     * Muesta de la encuesta a egresados
      *
      * @return \Illuminate\Http\Response
      */
@@ -43,45 +44,48 @@ class LogicaEgresadosController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * Se recibe el formulario completo de la encuesta, este se divide en secciones y es enviado a cada collección para ser insertado.
+     * Se recibe el formulario completo de la encuesta, este se divide en secciones y es enviado a cada colección para ser insertado en MONGO.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
+        //Respaldo del request original
         $requestOriginal = $request;
+
+        //Obtener solo los campos de la identificacion del egresado
         $request = $request->only(
                             "fechaderespuesta",
                             "nombre",
                             "curp",
                             "genero",
-                            "fnac",
+                            "fechadenacimiento",
                             "nacionalidad",
-                            "lorigen",
-                            "ltrabajo",
-                            "tcontacto",
+                            "lugardeorigen",
+                            "lugardetrabajo",
+                            "telefonodecontacto",
                             "correoelectronico");
 
-        //$identificacionegresadoEncuesta = new identificacionEgresado($request);
         $egresado = Egresado::create();
         $identificacionegresadoEncuesta = $egresado->identificacionegresado()->create( $request);
         $egresado->save();
 
+        //Obtener solo los campos de los estudios en la UTM
         $request = $requestOriginal;
         $estudiosenutmReq       = $request->only(
                                             "carrera",
-                                            "ftitulacion",
-                                            "finiestudios",
+                                            "fechadetitulacion",
+                                            "fechadeinicioestudios",
                                             "maestria",
                                             "maestriatitulo",
                                             "doctorado",
                                             "doctoradotitulo");
 
-        //$estudiosenutmEncuesta  = new EstudiosUTM($estudiosenutmReq);
         $estudiosenutmEncuesta  = $egresado->estudiosutm()->create($estudiosenutmReq);
         $egresado->save();
 
+        //Obtener solo los campos de los datos del trabajo actual
         $request = $requestOriginal;
         $datostrabajoactualReq      = $request->only(
                                             "nempresa",
@@ -93,11 +97,11 @@ class LogicaEgresadosController extends Controller
                                             "tcontrato",
                                             "imensual");
 
-        // $datostrabajoactualEncuesta = new DatosTrabajoActual($datostrabajoactualReq);
         $datostrabajoactualEncuesta = $egresado->datostrabajoactual()->create($datostrabajoactualReq);
         $egresado->save();
         $request = $requestOriginal;
         
+        //Obtener solo los campos de la satisfaccion profesional
         $satisfacionprofesionalReq  = $request->only(
                                             "tiempoprimerempleo",
                                             "difucultadprimerempleo",
@@ -121,6 +125,25 @@ class LogicaEgresadosController extends Controller
                                             "recomendaciones");
         $recomendaciones = $egresado->recomendacionesdelegresado()->create($recomendacionesegresadoReq);
         $egresado->save();
+
+        $request = $requestOriginal;
+        $req = $request->get("desarrolloprof");
+        
+        if( strlen($req) > 10 ){
+            $empleos = $this->stringToJSON($req);
+            foreach($empleos as $empleo){
+                $desarrolloprofesional = $egresado
+                                            ->desarrolloprofesional()
+                                                ->create([
+                                                    "empresaenlaquelaboro"  => $empleo[0]->empresaenlaquelaboro,
+                                                    "puestoinicial"         => $empleo[0]->puestoinicial,
+                                                    "puestofinal"           => $empleo[0]->puestofinal,
+                                                    "antiguedad"            => $empleo[0]->antiguedad,
+                                                    "funcionesprincipales"  => $empleo[0]->funcionesprincipales 
+                                                    ])
+                                                ->save();
+            }
+        }
         return view('agradecimiento.gracias');
         
     }
@@ -168,5 +191,9 @@ class LogicaEgresadosController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function stringToJSON($jsonstr){
+        return json_decode($jsonstr);
     }
 }

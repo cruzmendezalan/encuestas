@@ -9,8 +9,9 @@ class EstudiosUTM extends Eloquent
     protected $primaryKey = '_id';
     protected $collection = 'estudiosutm_collection';
     protected $fillable = [ "carrera",
-                          	"ftitulacion",
-                            "finiestudios",
+                          	"formadetitulacion",
+                            "fechadeinicioestudios",
+                            "fechadefinestudios",
                             "maestria",
                             "maestriatitulo",
                             "doctorado",
