@@ -14,8 +14,9 @@ class TestController extends Controller{
 		return view("welcome");
 	}
 
-	public function reporte(){
-		
+	public function test(){
+		$egresado = Egresado::first();
+		return dd($egresado);
 	}
 
 	public function testEmpleos(Request $request){

@@ -13,6 +13,7 @@
 
 
 Route::get('/', ['uses'=>'TestController@index']);
+Route::get('test', ['uses'=>'TestController@test']);
 
 Route::get('empleos', ['uses'=>'TestController@testEmpleos']);
 

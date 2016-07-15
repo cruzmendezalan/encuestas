@@ -150,6 +150,8 @@ return [
         /*Proveedor de mongoDB*/
         Jenssegers\Mongodb\MongodbServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        // Collective\Bus\BusServiceProvider::class,
+        // Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
