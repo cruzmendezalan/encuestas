@@ -257,7 +257,7 @@
 			</div>
 			<div class="col-md-8">
 				<select name="tipodeempresa" class="form-control">
-					<option value="public">Pública</option>
+					<option value="publica">Pública</option>
 					<option value="privada">Privada</option>
 					<option value="propia">Propio</option>
 				</select>
@@ -343,9 +343,9 @@
 			</div>
 			<div class="col-md-8">
 				<select name="ingresomensual" class="form-control">
-					<option value="completo"> < $5000.00 </option>
-					<option value="medio"> De $5001.00 a $10,000.00 </option>
-					<option value="horas"> > $10,000.00 </option>
+					<option value="menos5"> < $5000.00 </option>
+					<option value="mas5menos10"> De $5001.00 a $10,000.00 </option>
+					<option value="mas10"> > $10,000.00 </option>
 				</select>
 			</div>
 		</div>

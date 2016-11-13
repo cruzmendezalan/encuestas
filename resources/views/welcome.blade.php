@@ -16,7 +16,7 @@
                 <img src="img/logo.png" class="img-responsive center-block">
             </div>
             <div class="col-md-12 text-center">
-              <a type="button" href="egresados" class="btn btn-primary">Encuesta a egresados</a>
+              <a type="button" href="{{ url('egresados') }}" class="btn btn-primary">Encuesta a egresados</a>
               <a type="button" class="btn btn-default" disabled>Encuesta a empleadores</a>
             </div>
         </div>

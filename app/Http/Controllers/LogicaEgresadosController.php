@@ -88,14 +88,15 @@ class LogicaEgresadosController extends Controller
         //Obtener solo los campos de los datos del trabajo actual
         $request = $requestOriginal;
         $datostrabajoactualReq      = $request->only(
-                                            "nempresa",
-                                            "tempresa",
-                                            "fingreso",
-                                            "pactual",
-                                            "pinicial",
-                                            "thorario",
-                                            "tcontrato",
-                                            "imensual");
+                                            "nombreempresa",
+                                            "tipodeempresa",
+                                            "fechadeingreso",
+                                            "puestoactual",
+                                            "puestoinicial",
+                                            "tipodehorariolaboral",
+                                            "tipodecontrato",
+                                            "telefonodeempresa",
+                                            "ingresomensual");
 
         $datostrabajoactualEncuesta = $egresado->datostrabajoactual()->create($datostrabajoactualReq);
         $egresado->save();
@@ -117,6 +118,7 @@ class LogicaEgresadosController extends Controller
                                             "calificaciontecnicas",
                                             "calificacionevaluacion",
                                             "continuariasestudios");
+
         $satisfacionprofesional = $egresado->satisfacciondelaformacionprofesional()->create($satisfacionprofesionalReq);
         $egresado->save();
 

@@ -12,11 +12,12 @@ class TestController extends Controller{
 	
 	public function index(){
 		return view("welcome");
+		//return phpinfo();
 	}
 
 	public function test(){
 		$egresado = Egresado::first();
-		return dd($egresado);
+		return dd($egresado->identificacionegresado->nombre);
 	}
 
 	public function testEmpleos(Request $request){

@@ -12,8 +12,6 @@
           thead:before, thead:after { display: none; } 
           tbody:before, tbody:after { display: none; }
           td:{ height: 10px; }
-
-
   </style>
 
   <!-- Fonts -->
@@ -29,12 +27,12 @@
 <body >
 
   <div class="container">
-    <div class="row" id="header">
+    <div class="row">
       <div class="col-md-12">
         <h3 class="text-center">Análisis del resultado de los estudios de seguimiento a egresados</h3>
       </div>
     </div>
-    <div class="row" id="body">
+    <div class="row">
       <div class="col-md-12">
         <table class="table table-bordered table-condensed">
           <caption class="text-center">RESULTADOS RELEVANTES DE LOS ESTUDIOS DE SEGUIMIENTO A EGRESADOS</caption>
@@ -48,7 +46,7 @@
           <tbody>
             <tr>
               <td>Egresados considerados en el estudio</td>
-              <td></td>
+              <td>{{ $egresados["numeroDeEncuestados"] }}</td>
               <td></td>
             </tr>
             <tr>
@@ -61,12 +59,12 @@
             </tr>
             <tr>
               <td>Femenino</td>
-              <td></td>
+              <td>{{ $egresados["mujeres"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Masculino</td>
-              <td></td>
+              <td>{{ $egresados["hombre"] }}</td>
               <td></td>
             </tr>
             <tr>
@@ -77,22 +75,22 @@
             </tr>
             <tr>
               <td>Menos de 6 meses</td>
-              <td></td>
+              <td>{{ $egresados["menos6meses"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>De 6 a 9 meses</td>
-              <td></td>
+              <td>{{ $egresados["mas6menos9"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>De 9 a 12 meses</td>
-              <td></td>
+              <td>{{ $egresados["mas10menos12"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Más de un año</td>
-              <td></td>
+              <td>{{ $egresados["masunanio"] }}</td>
               <td></td>
             </tr>
             <tr>
@@ -105,22 +103,22 @@
             </tr>
             <tr>
               <td>No estar titulados</td>
-              <td></td>
+              <td>{{ $egresados["notitulado"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>No dominar el inglés u otro idioma</td>
-              <td></td>
+              <td>{{ $egresados["noingles"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Falta de experiencia laboral</td>
-              <td></td>
+              <td>{{ $egresados["nocompetenciaslaborales"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Ser egresado de su universidad</td>
-              <td></td>
+              <td>{{ $egresados["seregresadoutm"] }}</td>
               <td></td>
             </tr>
             <tr>
@@ -128,27 +126,27 @@
             </tr>
             <tr>
               <td>Empresas u organismos del sector privado</td>
-              <td></td>
+              <td>{{ $egresados["sectorPrivado"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>En organismos o instituciones Públcias</td>
-              <td></td>
+              <td>{{ $egresados["sectorPublico"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Empresas propias</td>
-              <td></td>
+              <td>{{ $egresados["empresaPropia"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Autoempleados</td>
-              <td></td>
+              <td>{{ $egresados["autoempleados"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Otros</td>
-              <td></td>
+              <td>{{ $egresados["otros"] }}</td>
               <td></td>
             </tr>
             <tr>
@@ -156,17 +154,17 @@
             </tr>
             <tr>
               <td>Tiempo completo</td>
-              <td></td>
+              <td>{{ $egresados["tiempocompleto"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Medio tiempo</td>
-              <td></td>
+              <td>{{ $egresados["mediotiempo"] }}</td>
               <td></td>
             </tr>
             <tr>
               <td>Eventual</td>
-              <td></td>
+              <td>{{ $egresados["eventual"] }}</td>
               <td></td>
             </tr>
             <tr>

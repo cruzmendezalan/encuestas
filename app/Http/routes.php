@@ -20,12 +20,14 @@ Route::get('empleos', ['uses'=>'TestController@testEmpleos']);
 Route::get('empleadores', function (){
 	return view('empleadores/empleadores');
 });
+
 //Route::get('egresados', ['uses'=>'LogicaEgresadosController@index']);
 // Route::get('gracias',function(){
 // 	return view('agradecimiento.gracias');
 // });
 
 Route::resource('egresados','LogicaEgresadosController');
-Route::get('reporte',['uses'=>'TestController@reporte']);
-Route::get('reportes/egresados', 'PDFController@reporteEncuestaEgresados');
+
+// Route::get('reportes',['uses'=>'ReportesController@index']);
+Route::get('reportes/egresados', ['uses' => 'PDFController@reporteEncuestaEgresados']);
 Route::get('reportes/empleadores', 'PDFController@reporteEncuestaEmpleadores');

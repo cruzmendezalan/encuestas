@@ -20,11 +20,11 @@
 		<div class="col-md-6">
 			<select name="tiempoprimerempleo" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo"> < 6 meses</option>
-				<option value="medio"> De 6 a 9 meses</option>
-				<option value="horas"> De 10 a 12 meses </option>
-				<option value="horas"> > a 1 año </option>
-				<option value="horas"> No cuento com empleo aún </option>
+				<option value="menos6meses"> < 6 meses</option>
+				<option value="mas6menos9"> De 6 a 9 meses</option>
+				<option value="mas10menos12"> De 10 a 12 meses </option>
+				<option value="masunanio"> > a 1 año </option>
+				<option value="notrabajo"> No cuento com empleo aún </option>
 			</select>
 		</div>
 	</div>
@@ -37,12 +37,12 @@
 		<div class="col-md-6">
 			<select name="difucultadprimerempleo" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">No tener competencias laborales</option>
-				<option value="medio">Ser egresado de la UTM</option>
-				<option value="horas">No estar titulado</option>
-				<option value="horas">No dominar un idioma extranjero </option>
-				<option value="horas">No acreditar un examen de selección</option>
-				<option value="horas">Inhabilidades Socio-comunicativas</option>
+				<option value="nocompetenciaslaborales">No tener competencias laborales</option>
+				<option value="seregresadoutm">Ser egresado de la UTM</option>
+				<option value="notitulado">No estar titulado</option>
+				<option value="noingles">No dominar un idioma extranjero </option>
+				<option value="noexamenseleccion">No acreditar un examen de selección</option>
+				<option value="nosociocomunicativas">Inhabilidades Socio-comunicativas</option>
 			</select>
 		</div>
 	</div>
@@ -55,11 +55,11 @@
 		<div class="col-md-6">
 			<select name="formacionrecibida" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelente</option>
-				<option value="medio">Muy buena</option>
-				<option value="horas">Buena</option>
-				<option value="horas">Regular</option>
-				<option value="horas">Mala</option>
+				<option value="excelente">Excelente</option>
+				<option value="muybuenas">Muy buena</option>
+				<option value="buena">Buena</option>
+				<option value="regular">Regular</option>
+				<option value="mala">Mala</option>
 			</select>
 		</div>
 	</div>
@@ -72,8 +72,8 @@
 		<div class="col-md-6">
 			<select name="carecesconocimientos" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Si</option>
-				<option value="medio">No</option>
+				<option value="si">Si</option>
+				<option value="no">No</option>
 			</select>
 		</div>
 	</div>
@@ -121,7 +121,7 @@
 		<div class="col-md-6">
 			<select name="carecesareasdeconocimiento" class="form-control">
 			<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Si</option>
+				<option value="si">Si</option>
 				<option value="medio">No</option>
 			</select>
 		</div>
@@ -169,11 +169,11 @@
 		<div class="col-md-6">
 			<select name="calificacioninstalaciones" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buena">Buenas</option>
+				<option value="regular">Regulares</option>
+				<option value="mala">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -186,11 +186,11 @@
 		<div class="col-md-6">
 			<select name="serviciosescolares" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buenas">Buenas</option>
+				<option value="regulares">Regulares</option>
+				<option value="malas">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -203,11 +203,11 @@
 		<div class="col-md-6">
 			<select name="calificacionequipos" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buenas">Buenas</option>
+				<option value="regulares">Regulares</option>
+				<option value="malas">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -220,11 +220,11 @@
 		<div class="col-md-6">
 			<select name="calificacionlimpieza" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buenas">Buenas</option>
+				<option value="regulares">Regulares</option>
+				<option value="malas">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -237,11 +237,11 @@
 		<div class="col-md-6">
 			<select name="calificaciondocentes" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buenas">Buenas</option>
+				<option value="regulares">Regulares</option>
+				<option value="malas">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -254,11 +254,11 @@
 		<div class="col-md-6">
 			<select name="calificaciontecnicas" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buenas">Buenas</option>
+				<option value="regulares">Regulares</option>
+				<option value="malas">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -271,11 +271,11 @@
 		<div class="col-md-6">
 			<select name="calificacionevaluacion" class="form-control" required>
 				<option disabled selected value> -- selecciona una opción -- </option>
-				<option value="completo">Excelentes</option>
-				<option value="medio">Muy buenas</option>
-				<option value="horas">Buenas</option>
-				<option value="horas">Regulares</option>
-				<option value="horas">Malas</option>
+				<option value="excelente">Excelentes</option>
+				<option value="muybuenas">Muy buenas</option>
+				<option value="buenas">Buenas</option>
+				<option value="regulares">Regulares</option>
+				<option value="malas">Malas</option>
 			</select>
 		</div>
 	</div>
@@ -287,8 +287,8 @@
 		</div>
 		<div class="col-md-6">
 			<select name="continuariasestudios" class="form-control">
-				<option value="completo">Si</option>
-				<option value="medio">No</option>
+				<option value="si">Si</option>
+				<option value="no">No</option>
 			</select>
 		</div>
 	</div>

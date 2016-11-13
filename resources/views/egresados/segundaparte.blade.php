@@ -50,43 +50,43 @@
 					<div id="formreset" class="form-horizontal modal-form" >
 						<div class="form-group">
 							<div class="col-md-4">
-								<label class="control-label" for="emlaboro">Empresa en la que laboró:</label>
+								<label class="control-label" for="tabla_nombreempresa">Empresa en la que laboró:</label>
 							</div>
 							<div class="col-md-8">
-								<input type="text" name="emlaboro" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control" placeholder="Nombre de la empresa">
+								<input type="text" name="nombreempresa" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control" placeholder="Nombre de la empresa">
 							</div>
 							
 						</div>
 						<div class="form-group">
 							<div class="col-md-4">
-								<label class="control-label" for="puinicial">Puesto en el que inicio:</label>
+								<label class="control-label" for="tabla_puestoinicial">Puesto en el que inicio:</label>
 							</div>
 							<div class="col-md-8">
-								<input type="text" name="puinicial" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
+								<input type="text" name="puestoinicial" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
 							</div>	
 						</div>
 						<div class="form-group">
 							<div class="col-md-4">
-								<label class="control-label" for="pufinal">Puesto en el que finalizo/actual:</label>
+								<label class="control-label" for="tabla_puestoactual">Puesto en el que finalizo/actual:</label>
 							</div>
 							<div class="col-md-8">
-								<input type="text" name="pufinal" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-4">
-								<label class="control-label" for="antiguedad">Antigüedad (años/meses):</label>
-							</div>	
-							<div class="col-md-8">
-								<input type="text" name="antiguedad" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
+								<input type="text" name="puestoactual" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-md-4">
-								<label class="control-label" for="antiguedad">Funciones principales: </label>
+								<label class="control-label" for="tabla_antiguedad">Antigüedad (años/meses):</label>
 							</div>	
 							<div class="col-md-8">
-								<input type="text" name="antiguedad" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
+								<input type="text" name="tabla_antiguedad" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-4">
+								<label class="control-label" for="tabla_funciones">Funciones principales: </label>
+							</div>	
+							<div class="col-md-8">
+								<input type="text" name="tabla_funciones" value="" data-toggle="tooltip" title="Campo indispensable" class="form-control">
 							</div>
 						</div>
 					</div>
