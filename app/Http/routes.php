@@ -24,5 +24,5 @@ Route::resource('egresados','LogicaEgresadosController');
 Route::resource('empleadores','LogicaEmpleadoresController');
 
 // Route::get('reportes',['uses'=>'ReportesController@index']);
-Route::get('reportes/egresados', ['uses' => 'PDFController@reporteEncuestaEgresados']);
-Route::get('reportes/empleadores', 'PDFController@reporteEncuestaEmpleadores');
+Route::get('reportes/egresados'  , ['uses' => 'PDFController@reporteEncuestaEgresados']);
+Route::get('reportes/empleadores', ['uses' => 'PDFController@reporteEncuestaEmpleadores']);

@@ -25,6 +25,7 @@ class PDFController extends Controller{
     }
 
     public function reporteEncuestaEmpleadores(){
+        return \View::make('pdf.reporteEncuestaEmpleadores');
         $data = $this->getData();
         $date = date('Y-m-d');
         $invoice = "3222";
@@ -33,6 +34,37 @@ class PDFController extends Controller{
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf->stream('invoice');
+    }
+
+    private function generate_empleadores_report(){
+        $empleadores = Empleadores::all();
+        
+        $respuestas["conocimientos_excelente"] = 0;
+        $respuestas["conocimientos_sobresaliente"] = 0;
+        $respuestas["conocimientos_aceptable"] = 0;
+        $respuestas["conocimientos_insuficiente"] = 0;
+        $respuestas["conocimientos_deficiente"] = 0;
+
+        $respuestas["carece_conocimientos"] = 0;
+        $respuestas["requiere_conocimientos"] = 0;
+        $respuestas["habilidades"] = 0;
+        $respuestas["no_habilidades"] = 0;
+        $respuestas["carece_habilidades"] = 0;
+        $respuestas["habilidades_importantes"] = 0;
+        $respuestas["habilidades_no_demostradas"] = 0;
+        
+        $respuestas["factores_contratar_nocompetencias"] = 0;
+        $respuestas["factores_contratar_ser_utm"] = 0;
+        $respuestas["factores_contratar_no_titulado"] = 0;
+        $respuestas["factores_contratar_no_ingles"] = 0;
+        $respuestas["factores_contratar_no_seleccion"] = 0;
+        $respuestas["factores_contratar_no_socio_comunicativas"] = 0;
+
+       
+        $respuestas["continuar_contratando_si"] = 0;
+        $respuestas["continuar_contratando_no"] = 0;
+       
+        return $respuestas;
     }
 
     private function generate_egresados_report(){

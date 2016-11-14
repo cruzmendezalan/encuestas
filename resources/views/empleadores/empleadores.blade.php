@@ -230,8 +230,8 @@
 									<div class="col-md-6">
 										<select name="carece_habilidades" class="form-control">
 											<option disabled selected value> -- selecciona una opción -- </option>
-											<option value="public">Si</option>
-											<option value="privada">No</option>
+											<option value="si">Si</option>
+											<option value="no">No</option>
 										</select>
 									</div>
 								</div>
