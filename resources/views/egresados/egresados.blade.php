@@ -34,9 +34,7 @@
 							<div class="col-md-12 text-center">
 								<div class="form-group">
 									<input type="submit" class="btn btn-primary btn-lg" value="Enviar Respuestas">
-
 								</div>
-								
 							</div>
 						</div>
 						

@@ -17,16 +17,11 @@ Route::get('test', ['uses'=>'TestController@test']);
 
 Route::get('empleos', ['uses'=>'TestController@testEmpleos']);
 
-Route::get('empleadores', function (){
-	return view('empleadores/empleadores');
-});
-
-//Route::get('egresados', ['uses'=>'LogicaEgresadosController@index']);
-// Route::get('gracias',function(){
-// 	return view('agradecimiento.gracias');
+// Route::get('empleadores', function (){
+// 	return view('empleadores/empleadores');
 // });
-
 Route::resource('egresados','LogicaEgresadosController');
+Route::resource('empleadores','LogicaEmpleadoresController');
 
 // Route::get('reportes',['uses'=>'ReportesController@index']);
 Route::get('reportes/egresados', ['uses' => 'PDFController@reporteEncuestaEgresados']);
