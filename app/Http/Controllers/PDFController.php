@@ -15,10 +15,10 @@ class PDFController extends Controller{
 
 
         /*-------------------------------*/
-        return dd($this->generate_egresados_report());
+        //return dd($this->generate_egresados_report());
         $egresados = $this->generate_egresados_report();
         $view =  \View::make('pdf.reporteEncuestaEgresados', compact("egresados"))->render();
-        return \View::make('pdf.reporteEncuestaEgresados', compact('egresados'))->render();
+        //return \View::make('pdf.reporteEncuestaEgresados', compact('egresados'))->render();
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf->stream('invoice');
@@ -150,7 +150,12 @@ class PDFController extends Controller{
         $respuestas['formacion_profesional_calificacionevaluacion_mala']      = 0;                          
 
         $respuestas['formacion_profesional_continuariasestudios_si'] = 0;                          
-        $respuestas['formacion_profesional_continuariasestudios_no'] = 0;                          
+        $respuestas['formacion_profesional_continuariasestudios_no'] = 0;   
+
+
+        $respuestas['trabajo_actual_ingresomensual_menos5']      = 0;                       
+        $respuestas['trabajo_actual_ingresomensual_mas5menos10'] = 0;                       
+        $respuestas['trabajo_actual_ingresomensual_mas10']       = 0;                       
 
 
 

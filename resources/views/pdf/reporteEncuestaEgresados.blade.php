@@ -46,26 +46,26 @@
           <tbody>
             <tr>
               <td>Egresados considerados en el estudio</td>
-              <td>{{ $egresados["numeroDeEncuestados"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["numeroDeEncuestados"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["numeroDeEncuestados"] * 100)/$egresados["numeroDeEncuestados"] }}% </strong></td>
             </tr>
             <tr>
               <td>Egresados encuestados</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["numeroDeEncuestados"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["numeroDeEncuestados"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Género de los egresados</td>
             </tr>
             <tr>
               <td>Femenino</td>
-              <td>{{ $egresados["mujeres"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["mujeres"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["mujeres"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Masculino</td>
-              <td>{{ $egresados["hombre"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["hombre"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["hombre"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Egresados con empleo</td>
@@ -75,23 +75,23 @@
             </tr>
             <tr>
               <td>Menos de 6 meses</td>
-              <td>{{ $egresados["menos6meses"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["menos6meses"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["menos6meses"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>De 6 a 9 meses</td>
-              <td>{{ $egresados["mas6menos9"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["mas6menos9"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["mas6menos9"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>De 9 a 12 meses</td>
-              <td>{{ $egresados["mas10menos12"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["mas10menos12"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["mas10menos12"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Más de un año</td>
-              <td>{{ $egresados["masunanio"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["masunanio"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["masunanio"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Aun no cuentan con empleo</td>
@@ -103,189 +103,184 @@
             </tr>
             <tr>
               <td>No estar titulados</td>
-              <td>{{ $egresados["notitulado"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["notitulado"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["notitulado"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>No dominar el inglés u otro idioma</td>
-              <td>{{ $egresados["noingles"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["noingles"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["noingles"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Falta de experiencia laboral</td>
-              <td>{{ $egresados["nocompetenciaslaborales"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["nocompetenciaslaborales"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["nocompetenciaslaborales"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Ser egresado de su universidad</td>
-              <td>{{ $egresados["seregresadoutm"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["seregresadoutm"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["seregresadoutm"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Tipo de organismo donde trabajan</td>
             </tr>
             <tr>
               <td>Empresas u organismos del sector privado</td>
-              <td>{{ $egresados["sectorPrivado"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["sectorPrivado"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["sectorPrivado"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>En organismos o instituciones Públcias</td>
-              <td>{{ $egresados["sectorPublico"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["sectorPublico"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["sectorPublico"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Empresas propias</td>
-              <td>{{ $egresados["empresaPropia"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["empresaPropia"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["empresaPropia"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Autoempleados</td>
-              <td>{{ $egresados["autoempleados"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["autoempleados"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["autoempleados"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Otros</td>
-              <td>{{ $egresados["otros"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["otros"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["otros"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Tiempo de dedicación en el empleo</td>
             </tr>
             <tr>
               <td>Tiempo completo</td>
-              <td>{{ $egresados["tiempocompleto"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["tiempocompleto"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["tiempocompleto"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Medio tiempo</td>
-              <td>{{ $egresados["mediotiempo"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["mediotiempo"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["mediotiempo"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Eventual</td>
-              <td>{{ $egresados["eventual"] }}</td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["eventual"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["eventual"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Tipo de formación profesional en el que desempeñan los egresados que trabajan</td>
             </tr>
             <tr>
               <td>En empleos profesionales que requieren de la formación de su carrera</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_carecesconocimientos_si"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_carecesconocimientos_si"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>En empleos profesionales que no requieren de la formación de su carrera</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_carecesconocimientos_no"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_carecesconocimientos_no"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>En empleos que no requieren de un profesion</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>0</strong></td>
+              <td class="text-center"><stron*100)($egresados["numeroDeEncuestados"]g>0</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Salario de los empleados profesionales</td>
             </tr>
             <tr>
               <td>Menos o igual a 5 mil pesos</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["trabajo_actual_ingresomensual_menos5"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["trabajo_actual_ingresomensual_menos5"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Más de 5 mil pesos y 10 mil pesos</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["trabajo_actual_ingresomensual_mas5menos10"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["trabajo_actual_ingresomensual_mas5menos10"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Más de 10 mil pesos y 15 mil pesos</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Más de 15 mil pesos</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["trabajo_actual_ingresomensual_mas10"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["trabajo_actual_ingresomensual_mas10"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Arraigo de los egresados en su zona de influencia o entidad federativa donde estudiaron</td>
             </tr>
             <tr>
               <td>Excelente</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_excelente"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_excelente"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Buena</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_buena"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_buena"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Regular</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_regular"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_regular"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Insatisfactoria</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_mala"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_mala"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Satisfacción de los egresados en cuanto a la formación recibida por la universidad</td>
             </tr>
             <tr>
               <td>Excelente</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_excelente"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_excelente"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Buena</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_buena"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_buena"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Regular</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_regular"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_regular"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Insatisfactoria</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_formacionrecibida_mala"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_formacionrecibida_mala"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td colspan="3" class="text-center bg-info">Opinion de los egresados en cuanto al clima universitario (instalaciones, limpieza, respeto a los derechos y obligaciones, equipamiento, laboratorios, bibliotecas, comportamiento de las autoridades, transparencia en el uso de los recursos citados.)</td>
             </tr>
             <tr>
               <td>Excelente</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_calificacioninstalaciones_excelente"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_calificacioninstalaciones_excelente"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Buena</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_calificacioninstalaciones_buena"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_calificacioninstalaciones_buena"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Regular</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_calificacioninstalaciones_regular"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_calificacioninstalaciones_regular"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td>Insatisfactoria</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["formacion_profesional_calificacioninstalaciones_mala"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["formacion_profesional_calificacioninstalaciones_mala"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td class="text-center bg-info">Egresados titulados</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["numeroDeEncuestados"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["numeroDeEncuestados"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
             <tr>
               <td class="text-center bg-info">Egresados no titulados</td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><strong>{{ $egresados["notitulado"] }}</strong></td>
+              <td class="text-center"><strong>{{ ($egresados["notitulado"]*100)/$egresados["numeroDeEncuestados"] }}</strong></td>
             </tr>
           </tbody>
         </table>
